@@ -313,7 +313,6 @@ h3.title {
     padding: 0 20px;
     line-height: 2;
 }
-
 #gallery ul.grid {
     width: 100%;
     display: flex;
@@ -326,6 +325,20 @@ h3.title {
 #gallery .grid li.large {
     flex-basis: 60%;
 }
+
+#galleryCarousel {
+    width: 800px;
+/*    height: 600px;*/
+    margin: auto;
+    border: 2px solid black;
+    vertical-align: middle;
+}
+.galleryCarousel>img {
+/*    margin: 0 auto;*/
+    display:inline-block;
+    align-self: 
+}
+
 @media(max-width: 1000px) {
     #gallery .grid li.small, #gallery .grid li.large {
         flex-basis: 100%;
