@@ -326,17 +326,15 @@ h3.title {
     flex-basis: 60%;
 }
 
-#galleryCarousel {
-    width: 800px;
-/*    height: 600px;*/
+#galleryCarousel, #publicGalleryCarousel {
+    width: 50%;
+    text-align: center;
     margin: auto;
     border: 2px solid black;
-    vertical-align: middle;
 }
-.galleryCarousel>img {
+.galleryCarousel>img, #publicGalleryCarousel>img {
 /*    margin: 0 auto;*/
     display:inline-block;
-    align-self: 
 }
 
 @media(max-width: 1000px) {
