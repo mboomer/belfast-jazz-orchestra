@@ -245,6 +245,12 @@ h3.title {
     padding: 0 20px;
     margin-bottom: 40px;
 }
+.covid19 {
+    background-color: crimson;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
 .ico {
     font-size: 40px;
     color: #2196f3;
