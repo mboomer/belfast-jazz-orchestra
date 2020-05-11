@@ -1,0 +1,50 @@
+                        <p>7:30pm - Free Dance Lesson<br>8:30pm - Jazz Orchestra<br>Entrance - £10 at the door<br>Cash Bar<br>Ballot/Prizes at interval</p>
+                        <p>7:30pm - Free Swing Dance Lesson<br>8:30pm - Jazz Orchestra<br>Entrance - £10 at the door<br>Cash Bar<br>Ballot/Prizes at interval</p>
+
+                        <p>7:30pm - Free Rumba Lesson<br>8:30pm - Jazz Orchestra<br>Entrance - £10 at the door<br>Cash Bar<br>Ballot/Prizes at interval</p>
+
+
+                    <div class="event-desc">
+                        <p><br>7:30pm - Free Swing Dance Lesson<br>8:30pm - Jazz Orchestra<br>Entrance - £10 at the door<br>Cash Bar<br>Ballot/Prizes at interval</p>
+                    </div>
+
+
+#events p:nth-child(2) {
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 5px 10px 5px;
+}
+#events ul.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#events ul.grid li h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+#events ul.grid li h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+#events ul.grid img {
+    max-width: 90%;
+}
+#events ul.grid li {
+    margin-bottom: 20px;
+}
+events ul.grid li p.event-desc {
+    align-content: left;
+}
+.event-desc p {
+    text-align: left;
+}
+#events ul.grid li p:nth-child(even) {              /* over ride the text-align center for the second p tag */
+    text-align: left;
+}

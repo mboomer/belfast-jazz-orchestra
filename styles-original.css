@@ -1,0 +1,587 @@
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+	font-family: 'Raleway' , sans-serif;
+	font-size: 16px;
+	color: #555;
+0}
+
+#body-top {                                          /* to stop bootstrap overriding the font in the body */
+	font-family: 'Raleway' , sans-serif;
+	font-size: 16px;
+	color: #555;
+}
+
+ul, nav {
+	list-style: none;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0px;
+    margin: 48px auto;
+}
+
+/* --------------
+    NAV
+-----------------*/
+#header-menu {
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 35px 100px 25px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-menu a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    cursor: pointer;
+}
+##header-menu a:hover {
+    opacity: 1;
+}
+#header-menu nav ul {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#header-menu nav li {
+    margin: 0 6px;
+}
+#header-menu nav li:first-child {
+    margin-left: 0;
+}
+#header-menu nav li:last-child {
+    margin-right: 0;
+}
+/* ******************************************** */
+/* screen size media rules                      */
+/* ******************************************** */
+@media(max-width: 500px){
+    #header-menu {
+        text-align: center;
+        flex-direction: row;
+        padding: 10px 10px;
+    }
+    #header-menu img {
+        width: 75%;
+    }
+    #header-menu nav {
+        justify-content: space-around;
+    }
+    /* modified to make menu wrap on smaller screens */
+    #header-menu nav ul.grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    /* spread menu items spread out more on smaller screens */
+    #header-menu nav li {
+        margin: 10px 10px;
+    }
+    h2 {
+        margin-bottom: 15px;
+    }
+}
+
+/* --------------
+    HERO SHOT
+-----------------*/
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background: gray;
+    color: white;
+/*
+    text-align: center;
+    vertical-align: top;
+*/
+    background-image: url('img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+}
+#background-image {
+    flex-basis: 90%;
+/*
+    padding: 0 20px;
+    margin-bottom: 40px;
+*/
+}
+#hero h1, #hero h3 {
+    font-size: 28px;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 40px;
+}
+
+#hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+#hero a.btn {
+    color: white;
+    background-color: #131633;
+    text-decoration: none;
+    padding: 20px 46px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    border: 2px solid white;
+}
+
+#hero a.btn:hover {
+    background-color: #2196f3;
+}
+/* ******************************************** */
+/* screen size media rules                      */
+/* ******************************************** */
+@media(max-width: 500px) {
+    #hero {
+        margin: 120px 0px auto;
+        min-height: 40vh;
+    }    
+    #hero h1 {
+        font-size: 36px;
+    }
+    #hero h3 {
+        font-size: 18px;
+    }
+    #hero a.btn {
+        padding: 15px 40px;
+    }
+    hr {
+        width: 150px;
+        height: 2px;
+        background-color: #2196f3;
+        border: 0px;
+        margin: 20px auto;
+    }
+}
+
+/* --------------
+    ABOUT ME
+-----------------*/
+h3 .title {
+    color: #161333;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+#about {
+    padding: 10px;
+    background-color; #f7f7f7;
+    margin-bottom: 20px;
+}
+
+#two-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    border: 4px solid #2196f3;
+    background-color: #2196f3;
+}
+.about-bio {
+    width: 65%;
+    max-width: 800px;
+    line-height: 2;
+    margin-left: 20px;
+}
+    @media (max-width: 500px) {
+        #about, #two-cols {
+            flex-direction: row;
+        
+        }
+        .about-img {
+            border: 4px solid #2196f3;
+            background-color: #2196f3;
+        }
+        #about {
+            margin-top: 20px;
+            line-height: 1.5;
+            text-align: left;    
+    }
+}
+/* -----------------
+    UPCOMING EVENTS
+--------------------*/
+#events {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#events ul.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 60px;
+
+}
+#events p {
+    margin-bottom: 20px;
+}
+#events ul.grid li {
+    flex-basis: 25%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.covid19 {
+    background-color: crimson;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+.ico {
+    font-size: 40px;
+    color: #2196f3;
+    margin-bottom: 20px;
+}
+
+#events ul.grid li h4 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#events ul.grid li p {
+    text-align: left;
+    font-size: 15px;
+    margin: 0;
+}
+@media(max-width: 500px) {
+    #events {
+        padding: 0 40px;
+    }
+    #events ul.grid li {
+        flex-basis: 70%;
+        margin-bottom: 65px;
+    }
+    #events ul.grid li p {
+        text-align: center;
+    }
+}
+
+
+/* --------------
+    JAZZ LEGENDS
+-----------------*/
+#jazz-legends {
+    background-color: #fff;
+}
+#jazz-legends ul.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+#jazz-legends .grid li {
+    padding: 5px;
+    height: 300px;
+    border-radius: 0px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+}
+/* --------------
+    GALLERY
+-----------------*/
+#gallery {
+    background-color: #fff;
+}
+#gallery .grid li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+#gallery p {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+#gallery ul.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#gallery .grid li.small {
+    flex-basis: 30%;
+}
+#gallery .grid li.large {
+    flex-basis: 60%;
+}
+
+#galleryCarousel, #publicGalleryCarousel {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+}
+.galleryCarousel>img, #publicGalleryCarousel>img {
+/*    margin: 0 auto;*/
+    display:inline-block;
+}
+
+@media(max-width: 500px) {
+    #gallery .grid li.small, #gallery .grid li.large {
+        flex-basis: 100%;
+    }
+    #galleryCarousel, #publicGalleryCarousel {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        border: 2px solid black;
+    }
+}
+
+/* --------------
+    MUSICAL DIRECTION
+-----------------*/
+#musical-direction {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#musical-direction ul.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 60px;
+
+}
+#musical-direction p {
+    margin-bottom: 20px;
+}
+#musical-direction ul.grid li {
+    flex-basis: 50%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.ico {
+    font-size: 40px;
+    color: #2196f3;
+    margin-bottom: 20px;
+}
+
+#musical-direction ul.grid li h4 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#musical-direction ul.grid li p {
+    text-align: left;
+    font-size: 15px;
+    margin: 0;
+}
+@media(max-width: 500px) {
+    #musical-direction {
+        padding: 0 40px;
+    }
+    #musical-direction ul.grid li {
+        flex-basis: 70%;
+        margin-bottom: 65px;
+    }
+    #musical-direction ul.grid li p {
+        text-align: center;
+    }
+}
+
+
+/* -------------------------
+    MEET THE BAND
+---------------------------*/
+#band-sections {
+    background-color: #fafafa;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#band-sections ul.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#band-sections .protrait-photos {
+    /* border-radius: 50%; this was to make images oval */
+    border: 4px solid #2196f3;
+    margin-bottom: 10px;
+}
+#band-sections .protrait-photos:first-child {
+    margin-top: 20px;
+}
+#band-sections .quote {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+#band-sections .author {
+    margin: 20px auto;
+}
+#band-sections .author:last-child {
+    margin-bottom: 0;
+}
+
+@media(max-width: 500px) {
+    #band-sections .quote {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+    #band-sections .author {
+        font-size: 14px;
+    }    
+}
+
+/* --------------
+    MAP
+-----------------*/
+section.flexbox-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+section.flexbox-section P {
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+/* ----------------------------------------
+    PUBLIC GALLERY - DANCERS & FANCY DRESS
+--------------------------------------------*/
+#public-gallery {
+    background-color: #fff;
+}
+
+#public-gallery .grid li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+#public-gallery p {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+#public-gallery ul.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#public-gallery .grid li.small {
+    flex-basis: 30%;
+}
+#public-gallery .grid li.large {
+    flex-basis: 60%;
+}
+@media(max-width: 500px) {
+    #public-gallery .grid li.small, #gallery .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
+/* --------------
+    FOOTER
+-----------------*/
+footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+	  color: #fff;
+	  background-color: #131633;
+      background: linear-gradient(to bottom, #284e7a 1%,#000000 100%);
+	  padding: 60px 0;
+    }
+    footer ul{
+            display: flex;
+            margin-bottom:  25px;
+        }
+
+    footer ul li{
+            margin: 0 8px;
+        }
+
+    footer ul li a{
+            font-size: 36px;
+            color: white;
+            cursor: pointer;
+        }
+
+    footer p{
+            text-transform: uppercase;
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 10px;
+        }
+
+    h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
+
+    @media(max-width: 500px) {
+    footer {
+        padding: 80px 15px;
+        }
+    }

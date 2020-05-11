@@ -1,42 +1,86 @@
+/* *****************************************************************************************
+/* recommended media breakpoints
+/* *****************************************************************************************
+
+    /* Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }                       */
+
+    /* Medium devices (tablets, 768px and up) 
+    @media (min-width: 768px) { ... }                       */
+
+    /* Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }                       */
+
+    /* Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }                      */
+
+/* *****************************************************************************************    */
+
+/* ******************************************************************************************   */
+/* mobile first approach - any rules above the media queries will apply to entire layout        */
+/* unless overridden by a specific media query                                                  */
+/* ******************************************************************************************   */
 /*
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html{
 	font-family: 'Raleway' , sans-serif;
 	font-size: 16px;
 	color: #555;
 }
-
-#top {                                          /* to stop bootstrap overriding the font in the body */
+#body-top {                                             /* to stop bootstrap overriding the font in the body */
+                                                        /* PINK */
+    background: rgba(255,0,0,0.25);                  
 	font-family: 'Raleway' , sans-serif;
 	font-size: 16px;
 	color: #555;
 }
-
 ul, nav {
 	list-style: none;
 }
-
 hr {
     width: 150px;
     height: 2px;
     background-color: #2196f3;
     border: 0px;
-    margin: 48px auto;
+    margin: 20px auto;
 }
-
-/* --------------
-    NAV
------------------*/
+h3.title {
+    color: rgba(0,0,0,1);                               /* black */
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.covid19 {
+    background-color: crimson;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#galleryCarousel, #publicGalleryCarousel {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+}
+.galleryCarousel>img, #publicGalleryCarousel>img {
+    display:inline-block;
+}
+/* ******************************************************************************************   */
+/*                                  HEADER NAV MENU                                             */
+/* ******************************************************************************************   */
 #header-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+
     background-color: rgba(0,0,0,0.7);
     position: fixed;
     z-index: 10;
@@ -44,13 +88,16 @@ hr {
     left: 0;
     width: 100%;
     color: #fff;
-    padding: 35px 100px 25px;
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding: 5px 5px;
 }
-
+#header-menu nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
 #header-menu a {
     text-decoration: none;
     color: white;
@@ -60,506 +107,360 @@ hr {
 ##header-menu a:hover {
     opacity: 1;
 }
-#header-menu nav ul {
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 #header-menu nav li {
-    margin: 0 6px;
+    margin: 0 1px;
 }
 #header-menu nav li:first-child {
-    margin-left: 0;
+    margin-left: 1;
 }
 #header-menu nav li:last-child {
-    margin-right: 0;
+    margin-right: 1;
 }
-
-@media(max-width: 1000px){
-    #header-menu {
-        text-align: center;
-        flex-direction: column;
-        padding: 20px 50px;
-    }
-    #header-menu img {
-        width: 75%;
-    }
-    #header-menu nav {
-        justify-content: space-around;
-    }
-    /* addded to make menu vertical on smaller screens */
-    #header-menu nav ul {
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    h2 {
-        margin-bottom: 15px;
-    }
-}
-
-/* --------------
-    HERO SHOT
------------------*/
-
+/* ******************************************************************************************   */
+/*                                  HERO IMAGE                                                  */
+/* ******************************************************************************************   */
 #hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-between;
-    background: gray;
-    color: white;
-/*
     text-align: center;
-    vertical-align: top;
-*/
-    background-image: url('img/hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 110vh;
+    margin: 100px 5px 0px 5px;                                         /* top right bottom left */
 }
-#background-image {
-    flex-basis: 90%;
-/*
-    padding: 0 20px;
-    margin-bottom: 40px;
-*/
+#hero img {
+    width: 100%;
 }
-#hero h1, #hero h3 {
-    font-size: 28px;
-    text-shadow: 2px 2px #000;
-    margin-bottom: 40px;
-}
-
-#hero h1 {
-    font-size: 60px;
-    margin-bottom: 15px;
-}
-
-#hero a.btn {
-    color: white;
-    background-color: #131633;
-    text-decoration: none;
-    padding: 20px 46px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    opacity: 1;
-    border: 2px solid white;
-}
-
-#hero a.btn:hover {
-    background-color: #2196f3;
-}
-
-@media(max-width: 800px) {
-    #hero {
-        margin: 200px 0px auto;
-        min-height: 40vh;
-    }    
-    #hero h1 {
-        font-size: 36px;
-    }
-    #hero h3 {
-        font-size: 18px;
-    }
-    #hero a.btn {
-        padding: 15px 40px;
-    }
-}
-
-/* --------------
-    ABOUT ME
------------------*/
-h3.title {
-    color: #161333;
-    text-transform: capitalize;
-    font-size: 32px;
-    margin-bottom: 36px;
-    text-align: center;
-}
-
-#about {
-    padding: 10px;
-    background-color; #f7f7f7;
-    margin-bottom: 20px;
-}
-
+/* ******************************************************************************************   */
+/*                                  ABOUT                                                       */
+/* ******************************************************************************************   */
 #two-cols {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     justify-content: center;
     align-items: center;
 }
-
-.about-img {
-    border: 4px solid #2196f3;
-    background-color: #2196f3;
-}
-.about-bio {
-    width: 65%;
-    max-width: 800px;
-    line-height: 2;
-    margin-left: 20px;
-}
-    @media (max-width: 800px) {
-        #about, #two-cols {
-            flex-direction: column;
-        
-        }
-        .about-img {
-            border: 4px solid #2196f3;
-            background-color: #2196f3;
-        }
-        #about {
-            margin-top: 20px;
-            line-height: 1.5;
-            text-align: left;    
-    }
-}
-/* -----------------
-    UPCOMING EVENTS
---------------------*/
-#events {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-#events ul.grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 60px;
-
-}
-#events p {
-    margin-bottom: 20px;
-}
-#events ul.grid li {
-    flex-basis: 25%;
-    padding: 0 20px;
-    margin-bottom: 40px;
-}
-.covid19 {
-    background-color: crimson;
-    font-size: 40px;
-    color: white;
-    margin-bottom: 20px;
-}
-.ico {
-    font-size: 40px;
-    color: #2196f3;
-    margin-bottom: 20px;
-}
-
-#events ul.grid li h4 {
-    color: #555;
-    font-size: 20px;
+#about {
+    padding: 5px;
+    background-color; #f7f7f7;
     margin-bottom: 10px;
 }
-#events ul.grid li p {
-    text-align: left;
-    font-size: 15px;
-    margin: 0;
+.about-img {
+    margin: auto;
 }
-@media(max-width: 1000px) {
-    #events {
-        padding: 0 40px;
-    }
-    #events ul.grid li {
-        flex-basis: 70%;
-        margin-bottom: 65px;
-    }
-    #events ul.grid li p {
-        text-align: center;
-    }
+.about-img img {
+    width: 100px;
 }
-
-
-/* --------------
-    JAZZ LEGENDS
------------------*/
+.about-bio {
+    width: 90%
+    line-height: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+/* ******************************************************************************************   */
+/*                                  JAZZ LEGENDS                                                */
+/* ******************************************************************************************   */
 #jazz-legends {
+    padding: 5px;
     background-color: #fff;
+    margin: 0px 5px 0px 5px;
 }
 #jazz-legends ul.grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2px;
     justify-content: center;
-    align-items: flex-start;
 }
-#jazz-legends .grid li {
-    padding: 5px;
-    height: 300px;
-    border-radius: 0px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
+#jazz-legends ul.grid img {
+    width: 100%;
+}
+/* ******************************************************************************************   */
+/*                                  EVENTS                                                      */
+/* ******************************************************************************************   */
+#events {
+    margin: 0px 5px 0px 5px;
+}
+#events > p:nth-child(3) {
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 5px 10px 5px;
+}
+#events ul.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    margin-bottom: 20px;
+}
+#events ul.grid li h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+#events ul.grid li h4 {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+}
+#events ul.grid li p.event-img {
+    text-align: center;
+}
+#events ul.grid li p.event-img img {
+    max-width: 200px;
+}
+#events ul.grid li div.event-desc { 
+    margin-bottom: 15px;
+}
+#events ul.grid li div.event-desc ul { 
+    font-size: 14px;
+    width: 75%;
+    margin: auto;
+}
+
+/* ******************************************************************************************   */
+/*                                      GALLERY                                                 */
+/* ******************************************************************************************   */
+#gallery  {
     background-color: #fff;
-}
-/* --------------
-    GALLERY
------------------*/
-#gallery {
-    background-color: #fff;
-}
-#gallery .grid li {
-    padding: 20px;
-    height: 350px;
-    border-radius: 3px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-    background-color: #333;
+    margin: 0px 5px 0px 5px;
 }
 #gallery p {
-    max-width: 800px;
     text-align: center;
-    margin: 0px auto 35px;
-    padding: 0 20px;
-    line-height: 2;
+    margin: 15px 5px 10px 5px;
 }
-#gallery ul.grid {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#gallery .grid li.small {
-    flex-basis: 30%;
-}
-#gallery .grid li.large {
-    flex-basis: 60%;
-}
-
-#galleryCarousel, #publicGalleryCarousel {
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    border: 2px solid black;
-}
-.galleryCarousel>img, #publicGalleryCarousel>img {
-/*    margin: 0 auto;*/
-    display:inline-block;
-}
-
-@media(max-width: 1000px) {
-    #gallery .grid li.small, #gallery .grid li.large {
-        flex-basis: 100%;
-    }
-}
-
-/* --------------
-    MUSICAL DIRECTION
------------------*/
+/* ******************************************************************************************   */
+/*                                      MUSICAL DIRECTION                                       */
+/* ******************************************************************************************   */
 #musical-direction {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-#musical-direction ul.grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 60px;
-
+    margin: 0px 5px 0px 5px;
 }
 #musical-direction p {
+    text-align: center;
     margin-bottom: 20px;
 }
-#musical-direction ul.grid li {
-    flex-basis: 50%;
-    padding: 0 20px;
-    margin-bottom: 40px;
+#musical-direction ul.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.ico {
-    font-size: 40px;
-    color: #2196f3;
-    margin-bottom: 20px;
+#musical-direction ul.grid li p {
+    text-align: left;
+    padding-left: 10px;
 }
-
 #musical-direction ul.grid li h4 {
     color: #555;
     font-size: 20px;
     margin-bottom: 10px;
 }
-#musical-direction ul.grid li p {
-    text-align: left;
-    font-size: 15px;
-    margin: 0;
-}
-@media(max-width: 1000px) {
-    #musical-direction {
-        padding: 0 40px;
-    }
-    #musical-direction ul.grid li {
-        flex-basis: 70%;
-        margin-bottom: 65px;
-    }
-    #musical-direction ul.grid li p {
-        text-align: center;
-    }
-}
-
-
-/* -------------------------
-    MEET THE BAND
----------------------------*/
+/* ******************************************************************************************   */
+/*                                      BAND SECTIONS                                           */
+/* ******************************************************************************************   */
 #band-sections {
     background-color: #fafafa;
-    padding-bottom: 40px;
+    margin: 0px 5px 0px 5px;
     text-align: center;
+    margin-bottom: 20px;
 }
 #band-sections ul.grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
     justify-content: center;
-    align-items: flex-start;
     margin-bottom: 20px;
 }
-
-#band-sections .protrait-photos {
-    /* border-radius: 50%; this was to make images oval */
-    border: 4px solid #2196f3;
-    margin-bottom: 10px;
+#band-sections ul.grid li img {
+    width: 100%;
 }
-#band-sections .protrait-photos:first-child {
-    margin-top: 20px;
+/* ******************************************************************************************   */
+/*                                      PUBLIC GALLERY                                          */
+/* ******************************************************************************************   */
+#public-gallery  {
+    background-color: #fff;
+    margin: 0px 5px 0px 5px;
 }
-#band-sections .quote {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0;
+#public-gallery p {
+    text-align: center;
+    margin: 15px 5px 10px 5px;
 }
-#band-sections .author {
-    margin: 20px auto;
+/* ******************************************************************************************   */
+/*                                      SHORTS RECREATION CLUB                                  */
+/* ******************************************************************************************   */
+#shorts-rec {
+    background-color: #fafafa;
+    margin: 0px 5px 0px 5px;
+    text-align: center;    
 }
-#band-sections .author:last-child {
-    margin-bottom: 0;
-}
-
-@media(max-width: 1000px) {
-    #band-sections .quote {
-        font-size: 18px;
-        padding: 0 20px;
-    }
-    #band-sections .author {
-        font-size: 14px;
-    }    
-}
-
-/* --------------
-    MAP
------------------*/
 section.flexbox-section {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-section.flexbox-section P {
-    max-width: 900px;
+section.flexbox-section p {
     text-align: center;
     margin-bottom: 35px;
     padding: 0 20px;
     line-height: 1.5;
 }
-
-/* ----------------------------------------
-    PUBLIC GALLERY - DANCERS & FANCY DRESS
---------------------------------------------*/
-#public-gallery {
-    background-color: #fff;
-}
-
-#public-gallery .grid li {
-    padding: 20px;
-    height: 350px;
-    border-radius: 3px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-    background-color: #333;
-}
-#public-gallery p {
-    max-width: 800px;
-    text-align: center;
-    margin: 0px auto 35px;
-    padding: 0 20px;
-    line-height: 2;
-}
-
-#public-gallery ul.grid {
+#shorts-rec section iframe {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    height: 400px;
+}
+/* ******************************************************************************************   */
+/*                                      SOCIAL MEDIA                                            */
+/* ******************************************************************************************   */
+#social-media {
+	color: #fff;
+	background-color: #131633;
+    background: linear-gradient(to bottom, #284e7a 1%,#000000 100%);
+    padding: 30px 0;
+    margin: 0px 5px 0px 5px;
+}
+#social-media p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+}
+#social-media ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
     justify-content: center;
+    margin: 1% 40%;
 }
-#public-gallery .grid li.small {
-    flex-basis: 30%;
+#social-media ul li {
+    margin: 1px 4px;
 }
-#public-gallery .grid li.large {
-    flex-basis: 60%;
+#social-media ul li a {
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
 }
-@media(max-width: 1000px) {
-    #public-gallery .grid li.small, #gallery .grid li.large {
-        flex-basis: 100%;
+/* ********************************************** MEDIA RULES ****************************************************************************   */
+
+/* ******************************************************************************************   */
+/* apply to any device that has a screen width of 576px or higher                               */
+/* ******************************************************************************************   */
+@media screen and (min-width: 576px) {
+                                                            /* YELLOW  */
+    #body-top { 
+        background: rgba(255,255,0,.25);                    
+    }
+    #hero {
+        margin: 80px 5px 0px 5px;                                         /* top right bottom left */
+    }
+    #jazz-legends ul.grid {
+        grid-template-columns: auto auto;
+        grid-gap: 2px;
+    }
+    #events ul.grid li div.event-desc ul { 
+        width: 85%;
+    }
+    #events ul.grid img {
+        width: 70%;
+    }
+    #social-media ul {
+        margin: 1% 40%;
     }
 }
-
-/* --------------
-    FOOTER
------------------*/
-footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-	  color: #fff;
-	  background-color: #131633;
-      background: linear-gradient(to bottom, #284e7a 1%,#000000 100%);
-	  padding: 60px 0;
+/* ******************************************************************************************   */
+/* apply to any device that has a screen width of 768px or higher                               */
+/* ******************************************************************************************   */
+@media screen and (min-width: 768px) {
+    h3.title {
+        font-size: 26px;
     }
-    footer ul{
-            display: flex;
-            margin-bottom:  25px;
-        }
-
-    footer ul li{
-            margin: 0 8px;
-        }
-
-    footer ul li a{
-            font-size: 36px;
-            color: white;
-            cursor: pointer;
-        }
-
-    footer p{
-            text-transform: uppercase;
-            font-size: 14px;
-            color: rgba(255,255,255,0.6);
-            margin-bottom: 10px;
-        }
-
-    h1, h2, h3, h4, h5, h6 {
-            font-family: 'Oswald', sans-serif;
-        }
-
-    @media(max-width: 800px) {
-    footer {
-        padding: 80px 15px;
-        }
+    #body-top { 
+                                                            /* GREEN */
+        background: rgba(0,255,0,.25);                
     }
+    #header-menu nav ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #hero {
+        margin: 80px 5px 0px 5px;                                         /* top right bottom left */
+    }
+    #jazz-legends ul.grid {
+        grid-template-columns: auto auto auto;
+        grid-gap: 4px;
+    }
+    #events ul.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    #events ul.grid li div.event-desc ul { 
+        width: 90%;
+    }
+    #galleryCarousel, #publicGalleryCarousel {
+        width: 80%;
+    }
+    #band-sections ul.grid {
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 4px;
+    }
+}
+/* ******************************************************************************************   */
+/* apply to any device that has a screen width of 992px or higher                               */
+/* ******************************************************************************************   */
+@media screen and (min-width: 992px) {
+    h3.title {
+        font-size: 36px;
+    }
+    #hero img {
+        width: 70%;
+    }
+    #body-top { 
+                                                            /* BLUE */
+        background: rgba(0,0,255,.25);
+    }
+    #header-menu nav ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr 3fr 3fr 2fr;
+        width: 85%;
+        margin: auto;
+    }
+    #hero {
+        margin: 55px 5px 0px 5px;                                         /* top right bottom left */
+    }
+    #jazz-legends ul.grid {
+        grid-template-columns: auto auto auto;
+        grid-gap: 5px;
+    }
+    #musical-direction ul.grid {
+        width: 80%;
+        margin: auto;
+    }
+    #events ul.grid li div.event-desc ul { 
+        font-size: 15px;
+        width: 60%;
+    }
+    #galleryCarousel, #publicGalleryCarousel {
+        width: 70%;
+    }
+    #band-sections ul.grid {
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 8px;
+    }
+    #social-media ul {
+        grid-gap: 4px;
+    }
+    #social-media ul li a {
+        font-size: 38px;
+    }
+}
+/* ******************************************************************************************   */
+/* apply to any device that has a screen width of 1200px or higher                              */
+/* ******************************************************************************************   */
+@media screen and (min-width: 1200px) {
+                                                        /* GRAY */
+    #body-top { 
+        background: rgba(150,150,150,.25);                
+    }
+    #hero {
+        margin: 40px 5px 0px 5px;                                         /* top right bottom left */
+    }
+    #jazz-legends ul.grid {
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-gap: 4px;
+    }
+    #band-sections ul.grid {
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 15px;
+    }
+}
