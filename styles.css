@@ -36,7 +36,7 @@ html{
 }
 #body-top {                                             /* to stop bootstrap overriding the font in the body */
                                                         /* PINK */
-    background: rgba(255,0,0,0.25);                  
+/*    background: rgba(255,0,0,0.25);                  */
 	font-family: 'Raleway' , sans-serif;
 	font-size: 16px;
 	color: #555;
@@ -78,9 +78,6 @@ h3.title {
 /*                                  HEADER NAV MENU                                             */
 /* ******************************************************************************************   */
 #header-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-
     background-color: rgba(0,0,0,0.7);
     position: fixed;
     z-index: 10;
@@ -93,10 +90,10 @@ h3.title {
 #header-menu nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     margin-bottom: 0px;
+    list-style: none;                              /* remove decoration from tags                          */
 }
 #header-menu a {
     text-decoration: none;
@@ -108,14 +105,16 @@ h3.title {
     opacity: 1;
 }
 #header-menu nav li {
-    margin: 0 1px;
+    margin: 0 10px;
 }
+/*
 #header-menu nav li:first-child {
-    margin-left: 1;
+    margin-left: 5px;
 }
 #header-menu nav li:last-child {
-    margin-right: 1;
+    margin-right: 5px;
 }
+*/
 /* ******************************************************************************************   */
 /*                                  HERO IMAGE                                                  */
 /* ******************************************************************************************   */
@@ -163,9 +162,10 @@ h3.title {
 }
 #jazz-legends ul.grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 #jazz-legends ul.grid img {
     width: 100%;
@@ -202,7 +202,7 @@ h3.title {
     text-align: center;
 }
 #events ul.grid li p.event-img img {
-    max-width: 200px;
+    max-width: 100%;
 }
 #events ul.grid li div.event-desc { 
     margin-bottom: 15px;
@@ -218,7 +218,7 @@ h3.title {
 /* ******************************************************************************************   */
 #gallery  {
     background-color: #fff;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 5px 20px 5px;
 }
 #gallery p {
     text-align: center;
@@ -234,6 +234,9 @@ h3.title {
 #musical-direction p {
     text-align: center;
     margin-bottom: 20px;
+}
+#musical-direction .musical-direction {
+    font-weight: bold;
 }
 #musical-direction ul.grid {
     display: grid;
@@ -341,7 +344,7 @@ section.flexbox-section p {
 @media screen and (min-width: 576px) {
                                                             /* YELLOW  */
     #body-top { 
-        background: rgba(255,255,0,.25);                    
+/*        background: rgba(255,255,0,.25);                    */
     }
     #hero {
         margin: 80px 5px 0px 5px;                                         /* top right bottom left */
@@ -367,9 +370,9 @@ section.flexbox-section p {
     h3.title {
         font-size: 26px;
     }
-    #body-top { 
                                                             /* GREEN */
-        background: rgba(0,255,0,.25);                
+    #body-top { 
+/*        background: rgba(0,255,0,.25);                */
     }
     #header-menu nav ul {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -406,12 +409,12 @@ section.flexbox-section p {
     #hero img {
         width: 70%;
     }
-    #body-top { 
                                                             /* BLUE */
-        background: rgba(0,0,255,.25);
+    #body-top { 
+/*        background: rgba(0,0,255,.25);*/
     }
     #header-menu nav ul {
-        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr 3fr 3fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr 1fr 2fr 2fr;
         width: 85%;
         margin: auto;
     }
@@ -429,6 +432,9 @@ section.flexbox-section p {
     #events ul.grid li div.event-desc ul { 
         font-size: 15px;
         width: 60%;
+    }
+    #events ul.grid li p.event-img img {
+        max-width: 80%;
     }
     #galleryCarousel, #publicGalleryCarousel {
         width: 70%;
@@ -450,7 +456,7 @@ section.flexbox-section p {
 @media screen and (min-width: 1200px) {
                                                         /* GRAY */
     #body-top { 
-        background: rgba(150,150,150,.25);                
+/*        background: rgba(150,150,150,.25);                */
     }
     #hero {
         margin: 40px 5px 0px 5px;                                         /* top right bottom left */
