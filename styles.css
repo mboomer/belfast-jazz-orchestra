@@ -218,7 +218,7 @@ h3.title {
 /* ******************************************************************************************   */
 #gallery  {
     background-color: #fff;
-    margin: 0px 5px 20px 5px;
+    margin: 0px 5px 70px 5px;
 }
 #gallery p {
     text-align: center;
@@ -379,6 +379,17 @@ section.flexbox-section p {
     }
     #hero {
         margin: 80px 5px 0px 5px;                                         /* top right bottom left */
+    }
+    .about-img img {
+        width: 80%;
+        margin-left: 20px;
+    }
+    .about-bio {
+        width: 100%
+        line-height: 2;
+        margin-left: 10px;
+        margin-right: 30px;
+        text-align: center;
     }
     #jazz-legends ul.grid {
         grid-template-columns: auto auto auto;
