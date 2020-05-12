@@ -74,6 +74,10 @@ h3.title {
 .galleryCarousel>img, #publicGalleryCarousel>img {
     display:inline-block;
 }
+/*this is to move the captions up so they dont intefer with the menu */
+#galleryCarousel .carousel-caption, #publicGalleryCarousel .carousel-caption {
+    bottom: 20%;
+}
 /* ******************************************************************************************   */
 /*                                  HEADER NAV MENU                                             */
 /* ******************************************************************************************   */
@@ -105,7 +109,7 @@ h3.title {
     opacity: 1;
 }
 #header-menu nav li {
-    margin: 0 10px;
+    margin-left: 2px;
 }
 /*
 #header-menu nav li:first-child {
@@ -120,7 +124,7 @@ h3.title {
 /* ******************************************************************************************   */
 #hero {
     text-align: center;
-    margin: 100px 5px 0px 5px;                                         /* top right bottom left */
+    margin: 80px 5px 0px 5px;                                         /* top right bottom left */
 }
 #hero img {
     width: 100%;
@@ -218,7 +222,7 @@ h3.title {
 /* ******************************************************************************************   */
 #gallery  {
     background-color: #fff;
-    margin: 0px 5px 70px 5px;
+    margin: 0px 5px 15px 5px;
 }
 #gallery p {
     text-align: center;
@@ -275,7 +279,7 @@ h3.title {
 /* ******************************************************************************************   */
 #public-gallery  {
     background-color: #fff;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 5px 15px 5px;
 }
 #public-gallery p {
     text-align: center;
@@ -372,7 +376,7 @@ section.flexbox-section p {
     }
                                                             /* GREEN */
     #body-top { 
-/*        background: rgba(0,255,0,.25);                */
+        background: rgba(0,255,0,.25);                
     }
     #header-menu nav ul {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -403,7 +407,7 @@ section.flexbox-section p {
         width: 90%;
     }
     #galleryCarousel, #publicGalleryCarousel {
-        width: 80%;
+        width: 50%;
     }
     #band-sections ul.grid {
         grid-template-columns: auto auto auto auto;
@@ -422,10 +426,11 @@ section.flexbox-section p {
     }
                                                             /* BLUE */
     #body-top { 
-/*        background: rgba(0,0,255,.25);*/
+        background: rgba(0,0,255,.25);
     }
     #header-menu nav ul {
-        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr 1fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+        text-align: center;
         width: 85%;
         margin: auto;
     }
@@ -447,9 +452,6 @@ section.flexbox-section p {
     #events ul.grid li p.event-img img {
         max-width: 80%;
     }
-    #galleryCarousel, #publicGalleryCarousel {
-        width: 70%;
-    }
     #band-sections ul.grid {
         grid-template-columns: auto auto auto auto;
         grid-gap: 8px;
@@ -467,7 +469,7 @@ section.flexbox-section p {
 @media screen and (min-width: 1200px) {
                                                         /* GRAY */
     #body-top { 
-/*        background: rgba(150,150,150,.25);                */
+        background: rgba(150,150,150,.25);                
     }
     #hero {
         margin: 40px 5px 0px 5px;                                         /* top right bottom left */
