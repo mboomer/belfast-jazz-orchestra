@@ -376,7 +376,7 @@ section.flexbox-section p {
     }
                                                             /* GREEN */
     #body-top { 
-        background: rgba(0,255,0,.25);                
+/*        background: rgba(0,255,0,.25);                */
     }
     #header-menu nav ul {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -426,7 +426,7 @@ section.flexbox-section p {
     }
                                                             /* BLUE */
     #body-top { 
-        background: rgba(0,0,255,.25);
+/*        background: rgba(0,0,255,.25);*/
     }
     #header-menu nav ul {
         grid-template-columns: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
@@ -469,7 +469,7 @@ section.flexbox-section p {
 @media screen and (min-width: 1200px) {
                                                         /* GRAY */
     #body-top { 
-        background: rgba(150,150,150,.25);                
+/*        background: rgba(150,150,150,.25);                */
     }
     #hero {
         margin: 40px 5px 0px 5px;                                         /* top right bottom left */
