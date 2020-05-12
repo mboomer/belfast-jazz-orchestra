@@ -1,0 +1,73 @@
+#header-menu nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;                              /* needed to override some bootstrap settings           */
+    list-style: none;                              /* remove decoration from tags                          */
+    font-size: 14px;
+}
+#header-menu a:hover {
+    opacity: 1;
+}
+#header-menu nav ul li {
+    margin: 0 6px;
+}
+#header-menu nav ul li:first-child {               /* set the first menu item (child) to the left side of the menu */
+    margin-left: 1;
+}
+#header-menu nav ul li:last-child {
+    margin-right: 0;                               /* set the last menu item (child) to the right side of the menu */
+} 
+
+
+
+
+                    <p>7:30pm - Free Dance Lesson<br>8:30pm - Jazz Orchestra<br>Entrance - £10 at the door<br>Cash Bar<br>Ballot/Prizes at interval</p>
+                        <p>7:30pm - Free Swing Dance Lesson<br>8:30pm - Jazz Orchestra<br>Entrance - £10 at the door<br>Cash Bar<br>Ballot/Prizes at interval</p>
+
+                        <p>7:30pm - Free Rumba Lesson<br>8:30pm - Jazz Orchestra<br>Entrance - £10 at the door<br>Cash Bar<br>Ballot/Prizes at interval</p>
+
+
+                    <div class="event-desc">
+                        <p><br>7:30pm - Free Swing Dance Lesson<br>8:30pm - Jazz Orchestra<br>Entrance - £10 at the door<br>Cash Bar<br>Ballot/Prizes at interval</p>
+                    </div>
+
+
+#events p:nth-child(2) {
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 5px 10px 5px;
+}
+#events ul.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#events ul.grid li h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+#events ul.grid li h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+#events ul.grid img {
+    max-width: 90%;
+}
+#events ul.grid li {
+    margin-bottom: 20px;
+}
+events ul.grid li p.event-desc {
+    align-content: left;
+}
+.event-desc p {
+    text-align: left;
+}
+#events ul.grid li p:nth-child(even) {              /* over ride the text-align center for the second p tag */
+    text-align: left;
+}
