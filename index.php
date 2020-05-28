@@ -1,3 +1,29 @@
+<?php
+    if($_POST["submit"]) {
+        $recipient="mark.boomer@9habu.com";
+        $subject="Message from 9habu contact form";
+        $senderFirst=$_POST["firstname"];
+        $senderLast=$_POST["lastname"];
+        $senderEmail=$_POST["emailadd"];
+        $senderPhone=$_POST["phone"];
+        $senderMessage=$_POST["message"];
+
+        # -------------------------------------------------------------------------------- #
+        # spam protection - check if hidden fields email/subject have been filled in       #
+        # spam protection - if they are then its likely a spam bot                         #
+        # -------------------------------------------------------------------------------- #
+        if (
+            (isset($_POST["email"]) && $_POST["email"] == "") && (isset($_POST["subject"]) && $_POST["subject"] == "")) {  
+            $mailBody="Name: $senderFirst $senderLast \n Email: $senderEmail\n\n Phone: $senderPhone\n\n $senderMessage";
+            mail($recipient, $subject, $mailBody, "From: $senderEmail <$senderEmail>");
+            $thankYou="<p><br /><strong>Thank you! Your message has been sent.</strong><br /></p>";
+        } else {
+                $thankYou="<p><br><strong>Sorry, your message has not been accepted</strong><br></p>";
+                http_response_code(400);
+                exit;
+        }
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -344,11 +370,38 @@
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
-        <div class="contact-form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuNX4fu80ogfh9QclPSqIHkvKMTqacGhUtjZtdqvLsx6Rlug/viewform?embedded=true" width="100%" height="900px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-        <hr>
-        <!-- ********************************************************************************** -->
+
+        <div id="formcontainer">
+
+            <div style="text-align: center;"><h3 class="title">Contact Form</h3></div>
+
+            <form id="formwrapper" method="post" action="index.php">
+                <section id="left-col">
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                        <?=$thankYou ?>                         <!-- insert thank you test via php -->   
+                        <p>
+                            <input id="firstname" name="firstname" type="text"   placeholder="First Name" autofocus tabindex="1">
+                            <input id="lastname"  name="lastname"  type="text"   placeholder="Last Name" tabindex="2">
+                            <input id="emailadd"  name="emailadd"  type="email"  placeholder="email@address.com" tabindex="3" required >
+                            <input id="phone"     name="phone"     type="number" placeholder="phone/mobile number" tabindex="4">
+                            <!-- this input field will be hidden as part of the spam protection -->
+                            <input id="email"     name="email"     type="email" placeholder="email@address.com" tabindex="5">
+                        </p>
+                    </fieldset>
+                </section>
+                <section id="right-col">
+                    <fieldset>
+                        <legend>Booking Query</legend>
+                        <!-- this input field will be hidden as part of the spam protection -->
+                        <input    id="subject" name="subject" type="text"  placeholder="Subject" tabindex="5">
+                        <textarea id="message" name="message" rows="10" placeholder="Please include date, time and location required..." tabindex="6"></textarea>
+                    </fieldset>
+                    <div><input name="submit" type="submit" value="Submit Form" tabindex="7"></div>
+                </section>    
+            </form>
+
+        </div> <!-- end of formcontainer -->
 
         <!-- ********************************************************************************** -->
         <footer id="social-media">
