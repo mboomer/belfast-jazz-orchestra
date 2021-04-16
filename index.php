@@ -63,7 +63,7 @@
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
                     <li><a href="#public-gallery">Dancing</a></li>
-                    <li><a href="#social-media">Social Media</a></li>
+                    <li><a href="#social-media">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
@@ -99,6 +99,43 @@
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
+        <div id="musical-direction">
+            <h3 class="title">Musical Direction</h3>
+            <p>Musical direction for the swing orchestra is provided by the musical director and chief soloist and chair person</p>
+            <ul class="grid">
+                <li><h4>Musical Director</h4>
+                    <div><span class="musical-direction">Victor Currie</span></div>
+                    <img src="img/victor-currie.jpg" alt="Victor Curry>">
+                    <p><br>Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
+                    A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
+                    Victor has played at a wide variety of events across Northern Ireland. Victor was a member of the Belfast Wind Youth Orchestra and has been involved in television and theatre work for over 30 years. </p>
+                </li>
+                <li><h4>Soloist</h4>
+                    <div><span class="musical-direction">Caroline Brown</span></div>
+                    <img src="img/caroline-brown.jpg" alt="Caroline Brown>">
+                    <p><br>Caroline serves the orchestra as chairperson and lead Soloist.<br><br> 
+                    Carolines jazz vocals, smooth, sophisicated and with a touch of the bules, are perfectly suited to deliver the repertoire of popular songs from the american songbook.</p>
+                </li>
+            </ul>
+        </div>            
+        <hr>
+        <!-- ********************************************************************************** -->
+
+        <!-- ********************************************************************************** -->
+        <div id="band-sections">
+            <h3 class="title">Band Sections</h3>
+            <ul class="grid">
+                <li><p><img src="img/sections-saxophones.png" alt="Saxaphone Section"></p></li>
+                <li><p><img src="img/section-perscussion.png" alt="Percussion Section"></p></li>
+                <li><p><img src="img/section-trombone.png" alt="Trombone Section"></p></li>
+                <li><p><img src="img/sections-wind.png" alt="Wind Section"></p></li>
+            </ul>
+        </div>
+        <hr>
+        <!-- ********************************************************************************** -->
+
+        <!-- ********************************************************************************** -->
+        <!-- 
         <div id="jazz-legends">
             <h3 class="title">Jazz Legends</h3>
             <div>
@@ -113,6 +150,7 @@
             </div>
         </div>
         <hr>
+	-->
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
@@ -124,7 +162,7 @@
             <ul class="grid">
                 <li><h3>May Day</h3>
                     <h4>Friday, 29th May</h4>
-                    <p class="event-img"><img src="img/events-may29-2020.jpg" alt="St. Patricks Day"></p>
+                    <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Swing Dance Lesson</li>
@@ -243,42 +281,6 @@
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
-        <div id="musical-direction">
-            <h3 class="title">Musical Direction</h3>
-            <p>Musical direction for the swing orchestra is provided by the musical director and chief soloist and chair person</p>
-            <ul class="grid">
-                <li><h4>Musical Director</h4>
-                    <div><span class="musical-direction">Victor Currie</span></div>
-                    <img src="img/victor-currie.jpg" alt="Victor Curry>">
-                    <p><br>Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
-                    A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
-                    Victor has played at a wide variety of events across Northern Ireland. Victor was a member of the Belfast Wind Youth Orchestra and has been involved in television and theatre work for over 30 years. </p>
-                </li>
-                <li><h4>Soloist</h4>
-                    <div><span class="musical-direction">Caroline Brown</span></div>
-                    <img src="img/caroline-brown.jpg" alt="Caroline Brown>">
-                    <p><br>Caroline serves the orchestra as chairperson and lead Soloist.<br><br> 
-                    Carolines jazz vocals, smooth, sophisicated and with a touch of the bules, are perfectly suited to deliver the repertoire of popular songs from the american songbook.</p>
-                </li>
-            </ul>
-        </div>            
-        <hr>
-        <!-- ********************************************************************************** -->
-
-        <!-- ********************************************************************************** -->
-        <div id="band-sections">
-            <h3 class="title">Band Sections</h3>
-            <ul class="grid">
-                <li><p><img src="img/sections-saxophones.png" alt="Saxaphone Section"></p></li>
-                <li><p><img src="img/section-perscussion.png" alt="Percussion Section"></p></li>
-                <li><p><img src="img/section-trombone.png" alt="Trombone Section"></p></li>
-                <li><p><img src="img/sections-wind.png" alt="Wind Section"></p></li>
-            </ul>
-        </div>
-        <hr>
-        <!-- ********************************************************************************** -->
-
-        <!-- ********************************************************************************** -->
         <div id="public-gallery">
             <h3 class="title">Theres always lots of dancing, singing and glamour</h3>
             <p>Swing, Lindy, Cha-cha, Waltz, Charleston...and some great costumes</p>        
@@ -381,7 +383,7 @@
                         <legend>Contact Details</legend>
                         <?=$thankYou ?>                         <!-- insert thank you test via php -->   
                         <p>
-                            <input id="firstname" name="firstname" type="text"   placeholder="First Name" autofocus tabindex="1">
+                            <input id="firstname" name="firstname" type="text"   placeholder="First Name" tabindex="1">
                             <input id="lastname"  name="lastname"  type="text"   placeholder="Last Name" tabindex="2">
                             <input id="emailadd"  name="emailadd"  type="email"  placeholder="email@address.com" tabindex="3" required >
                             <input id="phone"     name="phone"     type="number" placeholder="phone/mobile number" tabindex="4">
@@ -412,27 +414,11 @@
                 <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
             </ul>
             <p>&copy; <script>document.write(new Date().getFullYear());</script> Belfast Jazz Swing Orchestra</p>
-            <p>Dance like no-one is watching and sing like no one is listening</p>      
+            <p>Dance like no-one is watching Sing like no one is listening</p>      
         </footer>
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
-
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('a[href^="#"]').on('click',function (e) {e.preventDefault();
-
-                var target = this.hash;
-                var $target = $(target);
-
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top-120
-                }, 900, 'swing', function () {
-                    window.location.hash = target-120;
-                });
-                   });
-        });
-        </script>
 
         <!-- ************************************************************************************** -->
         <!-- jquery slim doesnt include animations so cause an error with the stop() function above -->
@@ -448,19 +434,56 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <script type="text/javascript">
-            $(document).ready(function(){
-                $('a[href^="#"]').on('click',function (e) {e.preventDefault();
+        //            $(document).ready(function(){
+        //                $('a[href^="#"]').on('click',function (e) {e.preventDefault();
+        //
+        //                var target = this.hash;
+        //                var $target = $(target);
+        //
+        //                $('html, body').stop().animate({
+        //                    'scrollTop': $target.offset().top-120
+        //                }, 900, 'swing', function () {
+        //                    window.location.hash = $target-120;
+        //                });
+        //                   });
+        //        });
 
-                var target = this.hash;
-                var $target = $(target);
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                && 
+                location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body')
+                            .animate({scrollTop: target.offset()
+                            .top-120}, 1000, function() {
+                                                        // Callback after animation
+                                                        // Must change focus!
+                                                        var $target = $(target);
+                                                        $target.focus();
+                                                            if ($target.is(":focus")) { // Checking if the target was focused
+                                                                                    return false;
+                                                            } else {$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                                                                $target.focus(); // Set focus again
+                                                            };
+                                                        });
+                                        }
+                }
+          });
 
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top-120
-                }, 900, 'swing', function () {
-                    window.location.hash = target-120;
-                });
-                   });
-        });
         </script>
         
     </body>
