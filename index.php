@@ -46,7 +46,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     
         <link rel="stylesheet" href="styles.css"/>
-
+        
     </head>
 
     <body id="body-top">
@@ -67,6 +67,15 @@
                 </ul>
             </nav>
         </header>
+        <!-- ********************************************************************************** -->
+
+        <!-- ********************************************************************************** -->
+        <!-- Cookie banner not displayed - it is displayed by JS if required on page load       -->
+        <!-- ********************************************************************************** -->
+        <div class="cookie-banner" style="display: none">
+            <p>Belfast Jazz Orchestra does not currently store cookies on your device <a href="">cookie policy</a> can go here</p>
+            <button id="close-banner">&times;</button>
+        </div>
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
@@ -434,6 +443,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <script type="text/javascript">
+            
         //            $(document).ready(function(){
         //                $('a[href^="#"]').on('click',function (e) {e.preventDefault();
         //
@@ -447,7 +457,32 @@
         //                });
         //                   });
         //        });
+        
+        // ------------------------------------------------------------------------------------------------//
+        // ADD CLICK EVENT LISTENER FOR THE DOM                                                            //
+        // ------------------------------------------------------------------------------------------------//
 
+        document.addEventListener('click', function (event) {
+
+            // -------------------------------------------------------------------------------------------------//
+            // event listener for the close-banner class                                                        //
+            // -------------------------------------------------------------------------------------------------//
+            if (event.target.matches('#close-banner')) {
+                document.querySelector(".cookie-banner").style.display = "none";
+            }
+
+        }, false);     // end of DOM CLICK eventlistener
+        // --------------------------------------------------------------------------------------------//         
+    
+
+        // --------------------------------------------------------------------------------------------------------------//
+        // if localStorage cookieBannerDisplayed=False, then display the cookie banner and set cookieBannerDisplayed=True   //
+        // -----------------------------------------------------------------------------------------------------------------//
+        if (localStorage.getItem("cookieBannerDisplayed") != "True") {
+            document.querySelector(".cookie-banner").style.display = "flex";
+            localStorage.setItem("cookieBannerDisplayed", "True")
+        };
+        
         $('a[href*="#"]')
           // Remove links that don't actually link to anything
           .not('[href="#"]')
