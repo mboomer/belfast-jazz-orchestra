@@ -52,7 +52,7 @@
     <body id="body-top">
 
         <!-- ********************************************************************************** -->
-        <header id="header-menu">
+        <header id="header-menu"> 
             <nav>
                 <ul class="grid">
                     <li><a href="#body-top">Top</a></li>
@@ -63,7 +63,8 @@
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
                     <li><a href="#public-gallery">Dancing</a></li>
-                    <li><a href="#social-media">Contact Us</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+<!--                    <li><a href="#social-media">Contact Us</a></li>-->
                 </ul>
             </nav>
         </header>
@@ -72,10 +73,12 @@
         <!-- ********************************************************************************** -->
         <!-- Cookie banner not displayed - it is displayed by JS if required on page load       -->
         <!-- ********************************************************************************** -->
+<!--
         <div class="cookie-banner" style="display: none">
-            <p>Belfast Jazz Orchestra does not currently store cookies on your device <a href="">cookie policy</a> can go here</p>
+            <p>Belfast Jazz Orchestra does not currently store cookies on your device. This may change <a href="">cookie policy</a> can go here</p>
             <button id="close-banner">&times;</button>
         </div>
+-->
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
@@ -164,14 +167,16 @@
 
         <!-- ********************************************************************************** -->
         <div id="events">
-            <h3 class="title">2020 Events</h3>
+            <h3 class="title">2021 Events</h3>
             <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p>
-            <p>The Belfast Jazz Swing Orchestra plays at the following events at Shorts Sports & Recreation Club</p>
+
+            <h3 class="title">2020 Events</h3>
+            <p>The Belfast Jazz Swing Orchestra played at the following events in Shorts Sports &amp; Recreation Club</p>
  
             <ul class="grid">
-                <li><h3>May Day</h3>
+                <li><h3>May Day - CANCELLED</h3>
                     <h4>Friday, 29th May</h4>
-                    <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>
+<!--                    <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Swing Dance Lesson</li>
@@ -182,9 +187,9 @@
                         </ul>
                     </div>
                 </li>
-                <li><h3>St. Patricks Day</h3>
+                <li><h3>St. Patricks Day - CANCELLED</h3>
                     <h4>Tuesday, 17th March</h4>
-                    <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>
+<!--                    <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Dance Lesson</li>
@@ -197,7 +202,7 @@
                 </li>
                 <li><h3>Valentines Day</h3>
                     <h4>Friday, 14th February</h4>
-                    <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>
+<!--                    <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Rumba Dance Lesson</li>
@@ -382,7 +387,7 @@
 
         <!-- ********************************************************************************** -->
 
-        <div id="formcontainer">
+        <div id="contact-us">
 
             <div style="text-align: center;"><h3 class="title">Contact Form</h3></div>
 
@@ -423,7 +428,7 @@
                 <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
             </ul>
             <p>&copy; <script>document.write(new Date().getFullYear());</script> Belfast Jazz Swing Orchestra</p>
-            <p>Dance like no-one is watching Sing like no one is listening</p>      
+            <p>Dance like no-one is watching - Sing like no one is listening</p>      
         </footer>
         <!-- ********************************************************************************** -->
 
@@ -444,80 +449,29 @@
 
         <script type="text/javascript">
             
-        //            $(document).ready(function(){
-        //                $('a[href^="#"]').on('click',function (e) {e.preventDefault();
-        //
-        //                var target = this.hash;
-        //                var $target = $(target);
-        //
-        //                $('html, body').stop().animate({
-        //                    'scrollTop': $target.offset().top-120
-        //                }, 900, 'swing', function () {
-        //                    window.location.hash = $target-120;
-        //                });
-        //                   });
-        //        });
-        
-        // ------------------------------------------------------------------------------------------------//
-        // ADD CLICK EVENT LISTENER FOR THE DOM                                                            //
-        // ------------------------------------------------------------------------------------------------//
+            // ------------------------------------------------------------------------------------------------//
+            // ADD CLICK EVENT LISTENER FOR THE DOM                                                            //
+            // ------------------------------------------------------------------------------------------------//
 
-        document.addEventListener('click', function (event) {
+            document.addEventListener('click', function (event) {
 
-            // -------------------------------------------------------------------------------------------------//
-            // event listener for the close-banner class                                                        //
-            // -------------------------------------------------------------------------------------------------//
-            if (event.target.matches('#close-banner')) {
-                document.querySelector(".cookie-banner").style.display = "none";
-            }
-
-        }, false);     // end of DOM CLICK eventlistener
-        // --------------------------------------------------------------------------------------------//         
-    
-
-        // --------------------------------------------------------------------------------------------------------------//
-        // if localStorage cookieBannerDisplayed=False, then display the cookie banner and set cookieBannerDisplayed=True   //
-        // -----------------------------------------------------------------------------------------------------------------//
-        if (localStorage.getItem("cookieBannerDisplayed") != "True") {
-            document.querySelector(".cookie-banner").style.display = "flex";
-            localStorage.setItem("cookieBannerDisplayed", "True")
-        };
-        
-        $('a[href*="#"]')
-          // Remove links that don't actually link to anything
-          .not('[href="#"]')
-          .not('[href="#0"]')
-          .click(function(event) {
-            // On-page links
-            if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-                && 
-                location.hostname == this.hostname
-                ) {
-                    // Figure out element to scroll to
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    
-                    // Does a scroll target exist?
-                    if (target.length) {
-                        // Only prevent default if animation is actually gonna happen
-                        event.preventDefault();
-                        $('html, body')
-                            .animate({scrollTop: target.offset()
-                            .top-120}, 1000, function() {
-                                                        // Callback after animation
-                                                        // Must change focus!
-                                                        var $target = $(target);
-                                                        $target.focus();
-                                                            if ($target.is(":focus")) { // Checking if the target was focused
-                                                                                    return false;
-                                                            } else {$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                                                                $target.focus(); // Set focus again
-                                                            };
-                                                        });
-                                        }
+                // -------------------------------------------------------------------------------------------------//
+                // event listener for the close-banner class                                                        //
+                // -------------------------------------------------------------------------------------------------//
+                if (event.target.matches('#close-banner')) {
+                    document.querySelector(".cookie-banner").style.display = "none";
                 }
-          });
+
+            }, false);     // end of DOM CLICK eventlistener
+            // --------------------------------------------------------------------------------------------//         
+
+            // --------------------------------------------------------------------------------------------------------------//
+            // if localStorage cookieBannerDisplayed=False, then display the cookie banner and set cookieBannerDisplayed=True   //
+            // -----------------------------------------------------------------------------------------------------------------//
+//            if (localStorage.getItem("cookieBannerDisplayed") != "True") {
+//                document.querySelector(".cookie-banner").style.display = "flex";
+//                localStorage.setItem("cookieBannerDisplayed", "True")
+//            };
 
         </script>
         
