@@ -159,7 +159,7 @@ h3.title {
     margin: 80px 5px 0px 5px;                                         /* top right bottom left */
 }
 #hero img {
-    width: 100%;
+    width: 60%;
 }
 /* ******************************************************************************************   */
 /*                                  ABOUT                                                       */
@@ -172,9 +172,9 @@ h3.title {
 }
 #about {
     scroll-behavior: smooth;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 50px;
     padding: 5px;
-    background-color; #f7f7f7;
+    background-color: #f7f7f7;
     margin-bottom: 10px;
 }
 .about-img {
@@ -215,7 +215,7 @@ h3.title {
 /* ******************************************************************************************   */
 #events {
     scroll-behavior: smooth;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 50px;
     margin: 0px 5px 0px 5px;
 }
 #events > p:nth-child(3) {
@@ -265,8 +265,8 @@ h3.title {
 /* ******************************************************************************************   */
 #gallery  {
     scroll-behavior: smooth;
-    scroll-margin-top: 120px;
-    background-color: #fff;
+    scroll-margin-top: 50px;
+    background-color: #f7f7f7;
     margin: 0px 5px 15px 5px;
 }
 #gallery p {
@@ -278,7 +278,7 @@ h3.title {
 /* ******************************************************************************************   */
 #musical-direction {
     scroll-behavior: smooth;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 50px;
     text-align: center;
     margin: 0px 5px 0px 5px;
 }
@@ -307,7 +307,7 @@ h3.title {
 /* ******************************************************************************************   */
 #band-sections {
     scroll-behavior: smooth;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 50px;
     background-color: #fafafa;
     margin: 0px 5px 0px 5px;
     text-align: center;
@@ -328,7 +328,7 @@ h3.title {
 /* ******************************************************************************************   */
 #public-gallery  {
     scroll-behavior: smooth;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 50px;
     background-color: #fff;
     margin: 0px 5px 15px 5px;
 }
@@ -341,7 +341,7 @@ h3.title {
 /* ******************************************************************************************   */
 #shorts-rec {
     scroll-behavior: smooth;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 100px;
     background-color: #fafafa;
     margin: 0px 5px 0px 5px;
     text-align: center;    
@@ -547,7 +547,7 @@ section.flexbox-section p {
         font-size: 36px;
     }
     #hero img {
-        width: 70%;
+        width: 60%;
     }
                                                             /* BLUE */
     #body-top { 

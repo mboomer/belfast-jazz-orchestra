@@ -1,6 +1,6 @@
 <?php
     if($_POST["submit"]) {
-        $recipient="mark.boomer@9habu.com";
+        $recipient="bookings@bjso.org.uk,caroline.brown@bjso.org.uk,victor.currie@bjso.org.uk";
         $subject="Message from 9habu contact form";
         $senderFirst=$_POST["firstname"];
         $senderLast=$_POST["lastname"];
@@ -48,14 +48,32 @@
         <link rel="stylesheet" href="styles.css"/>
         
         <style type="text/css">
-            summary {
-                font-weight: bold;
-                margin-bottom: 0.25em;
+            details {
+                font: 16px "Open Sans", Calibri, sans-serif;
+                width: 95%;
+            }
+            details > summary {
+                padding: 2px 6px;
+                width: 95%;
+                background-color: #ddd;
+                border: none;
+                box-shadow: 3px 3px 4px black;
+                cursor: pointer;
             }
 
-            p {
-                margin: 0 0 1.5em;
-                padding: 0;
+            details > p {
+                margin: 5px;
+            }
+
+            details[open] > summary {
+                background-color: #ccf;
+            }
+
+            details[open] > ul {
+                padding-left: 15px;
+                list-style: disc;
+                list-style-position: inside;
+                text-align: left;                    
             }
         </style>        
 
@@ -76,7 +94,7 @@
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
                     <li><a href="#public-gallery">Dancing</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
-<!--                    <li><a href="#social-media">Contact Us</a></li>-->
+                    <!-- <li><a href="#social-media">Contact Us</a></li>-->
                 </ul>
             </nav>
         </header>
@@ -85,12 +103,12 @@
         <!-- ********************************************************************************** -->
         <!-- Cookie banner not displayed - it is displayed by JS if required on page load       -->
         <!-- ********************************************************************************** -->
-<!--
+        <!--
         <div class="cookie-banner" style="display: none">
             <p>Belfast Jazz Orchestra does not currently store cookies on your device. This may change <a href="">cookie policy</a> can go here</p>
             <button id="close-banner">&times;</button>
         </div>
--->
+        -->
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
@@ -115,7 +133,7 @@
             <div id="two-cols">
                 <div class="about-img"><img src="img/about.jpg" alt="About Belfast Jazz"></div>
                 <div class="about-bio">
-                <p>Formed in 1990 the Belfast Jazz Swing Orchestra is dedicated to playing songs by jazz greats such as Count Basie, Duke Ellington and Glenn Miller</p>
+                <p>Formed in 1990 The Belfast Jazz Swing Orchestra is dedicated to the performance and encouragement of Big Band swing and the jazz music of such composers as Count Basie, Duke Ellington, Glen Miller to name a few.</p>
                 </div>
             </div>
         </div>
@@ -136,7 +154,7 @@
                     
                     <div data-accordion="1">
                         <details>
-                            <summary style="text-align: left; border-radius: 0px;">Show More...</summary>
+                            <summary>Musical Background</summary>
                             <p>
                                 Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
                                 A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
@@ -152,18 +170,13 @@
                     <p><br>Caroline serves the orchestra as chairperson and lead Soloist.<br><br> 
                     Carolines jazz vocals, smooth, sophisicated and with a touch of the blues, are perfectly suited to deliver the repertoire of popular songs from the american songbook.</p>
 
-                    <div data-accordion="2" style="text-align: left">
+                    <div data-accordion="2">
                         <details>
-                            <summary>Show More...</summary>
-                            <p>
-                                Caroline sings with the Belfast Jazz Orchestra, a 20 piece Big Band and is also available for Corporate/Charity Events, Weddings and Private Parties with her 2 piece or 5-6 piece band, with accompanists Ivan Black, Victor Currie, Scott Flanagan amd Steve Barnett<br>
-                                <br>
-                                Carolines voice is ideally suited to the repertoire of the great American Song Book, smooth, sophisticated swing jazz with a little touch of blues.<br>
-                                <br>
-                                Caroline has had an extensive and distinguished background in musical theatre having won awards for performances in Lead Principle roles such as:<br>
-                            </p>
+                            <summary>Musical Background</summary>
+                            
+                            <p><br>Caroline sings with the Belfast Jazz Orchestra, a 20 piece Big Band and is also available for Corporate/Charity Events, Weddings and Private Parties with her 2 piece or 5-6 piece band, with accompanists Ivan Black, Victor Currie, Scott Flanagan amd Steve Barnett<br><br>Her voice is ideally suited to the repertoire of the great American Song Book...smooth, sophisticated swing jazz with a little touch of blues.<br><br>Caroline has also had an extensive and distinguished background in musical theatre having won awards for performances in Lead Principle roles<br></p>
 
-                            <ul style="list-style: disc; list-style-position: inside;">
+                            <ul>
                                 <li>Chicago (Velma Kelly)</li>
                                 <li>The Hot Mikado (Katisha - Blues/Jazz Version)</li>
                                 <li>Annie (Miss Hannigan)</li>
@@ -173,9 +186,9 @@
                                 <li>Carousel (Nettie Fowler)</li>
                             </ul>
                             <br>
-                            <p>She has performed as a soloist at a variety of venues throughout Northern Ireland and Europe</p>
+                            <p>Caroline has performed as a soloist at a variety of venues throughout Northern Ireland and Europe</p>
 
-                            <ul style="list-style: disc; list-style-position: inside;">
+                            <ul>
                                 <li>Waterfront Concert Hall Belfast</li>
                                 <li>The Grand Opera House</li>
                                 <li>National Concert Hall Dublin</li>
@@ -184,9 +197,9 @@
                                 <li>BT Studio</li>
                             </ul>
                             <br>    
-                            <p>Caroline sings "Easy Swing Jazz" music from "The Great American Songbook", classics such as</p>
+                            <p>Her repertoire from "The Great American Songbook", includes classics like</p>
 
-                            <ul style="list-style: disc; list-style-position: inside;">
+                            <ul>
                                 <li>Sentimental Journey</li>
                                 <li>That Old Black Magic</li>
                                 <li>Fly me to the Moon</li>
@@ -202,14 +215,14 @@
                                 <li>The Man I Love</li>
                             </ul>
                             <br>                                        
-                            <p>Caroline has performed with other bands, like</p>
+                            <p>Caroline has performed with many bands, including</p>
                                 
-                            <ul style="list-style: disc; list-style-position: inside;">
+                            <ul>
                                 <li>Victor Currie Swing Band</li>
-                                <li>Apex</li>
+                                <li>Apex Jazz Band</li>
                                 <li>Easyjazz</li>
                                 <li>Panama</li>
-                                <li>Martello</li>
+                                <li>Martello Jazz Band</li>
                                 <li>Kings of Swing</li>
                                 <li>The Dixies</li>
                                 <li>Bourbon Swing</li>
@@ -254,7 +267,7 @@
             </div>
         </div>
         <hr>
-	-->
+	    -->
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
@@ -268,7 +281,7 @@
             <ul class="grid">
                 <li><h3>May Day - CANCELLED</h3>
                     <h4>Friday, 29th May</h4>
-<!--                    <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>-->
+                    <!-- <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Swing Dance Lesson</li>
@@ -281,7 +294,7 @@
                 </li>
                 <li><h3>St. Patricks Day - CANCELLED</h3>
                     <h4>Tuesday, 17th March</h4>
-<!--                    <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>-->
+                    <!-- <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Dance Lesson</li>
@@ -294,7 +307,7 @@
                 </li>
                 <li><h3>Valentines Day</h3>
                     <h4>Friday, 14th February</h4>
-<!--                    <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>-->
+                    <!-- <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Rumba Dance Lesson</li>
@@ -317,18 +330,7 @@
             <p>Images of the Belfast Jazz Orchestra performing at some of their favourite venues</p>
 
             <div id="galleryCarousel" class="carousel slide" data-interval="false" touch="true">
-<!--
 
-                <ol class="carousel-indicators">
-                    <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="1"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="2"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="3"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="4"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="5"></li>
-                </ol>
-                
--->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/gallery-brass-section.jpg" class="d-block w-100 center-image" alt="Brass Section">
@@ -392,18 +394,7 @@
             <p>Swing, Lindy, Cha-cha, Waltz, Charleston...and some great costumes</p>        
             
             <div id="publicGalleryCarousel" class="carousel slide" data-interval="false" touch="true">
-<!--
 
-              <ol class="carousel-indicators">
-                <li data-target="#publicGalleryCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="1"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="2"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="3"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="4"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="5"></li>
-              </ol> 
-                
--->
                 <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/publc-fancydress-2018.jpg" class="d-block w-100 center-image" alt="Fancy Dress Halloween 2018">
@@ -542,6 +533,13 @@
         <script type="text/javascript">
             
             // ------------------------------------------------------------------------------------------------//
+            // AVOID FORM SUBMISSION AFTER REFRESH                                                             //
+            // ------------------------------------------------------------------------------------------------//
+            if ( window.history.replaceState ) {
+                window.history.replaceState( null, null, window.location.href );
+            }
+            
+            // ------------------------------------------------------------------------------------------------//
             // ADD CLICK EVENT LISTENER FOR THE DOM                                                            //
             // ------------------------------------------------------------------------------------------------//
 
@@ -560,131 +558,10 @@
             // --------------------------------------------------------------------------------------------------------------//
             // if localStorage cookieBannerDisplayed=False, then display the cookie banner and set cookieBannerDisplayed=True   //
             // -----------------------------------------------------------------------------------------------------------------//
-//            if (localStorage.getItem("cookieBannerDisplayed") != "True") {
-//                document.querySelector(".cookie-banner").style.display = "flex";
-//                localStorage.setItem("cookieBannerDisplayed", "True")
-//            };
-
-//            /**
-//             * Progressively Enhanced Accordion Components
-//             * (c) 2020 Chris Ferdinandi, MIT License, https://gomakethings.com
-//             */
-//            var Accordions = (function () {
-//
-//                'use strict';
-//
-//
-//                //
-//                // Methods
-//                //
-//
-//                /**
-//                 * Close any existing open accordion elements
-//                 * @param  {Node} current The current element being opened
-//                 * @param  {Node} parent  The wrapper for all sibling accordions
-//                 */
-//                var closeOthers = function (current, parent) {
-//
-//                    // Get all open accordions inside parent
-//                    var opened = Array.from(parent.querySelectorAll('details[open]'));
-//
-//                    // Close open ones that aren't current accordion
-//                    opened.forEach(function (accordion) {
-//                        if (accordion === current) return;
-//                        accordion.removeAttribute('open');
-//                    });
-//
-//                };
-//
-//                /**
-//                 * Handle toggle event on an accordion element
-//                 * @param  {Event} event     The Event object
-//                 * @param  {String} selector The accordion group selector
-//                 */
-//                var toggle = function (event, selector) {
-//
-//                    // Only run on accordions inside our selector
-//                    var parent = event.target.closest(selector);
-//                    if (!parent) return;
-//
-//                    // Only run if accordion is open
-//                    if (!event.target.hasAttribute('open')) return;
-//
-//                    // Close any existing open accordions
-//                    closeOthers(event.target, parent);
-//
-//                };
-//
-//
-//                /**
-//                 * Create the Constructor object
-//                 */
-//                var Constructor = function (selector) {
-//
-//                    //
-//                    // Variables
-//                    //
-//
-//                    var publicAPIs = {};
-//
-//
-//                    //
-//                    // Methods
-//                    //
-//
-//                    /**
-//                     * Handle toggle events
-//                     * @param  {Event} event The Event object
-//                     */
-//                    var toggleHandler = function (event) {
-//                        toggle(event, selector);
-//                    };
-//
-//                    /**
-//                     * Destroy the current instantiation
-//                     */
-//                    publicAPIs.destroy = function () {
-//                        document.removeEventListener('toggle', toggleHandler, true);
-//                    };
-//
-//                    /**
-//                     * Initialize a new instantiation
-//                     */
-//                    publicAPIs.init = function () {
-//
-//                        // Check for errors
-//                        if (!selector || typeof selector !== 'string') {
-//                            throw new Error('Please provide a valid selector');
-//                        }
-//
-//                        // Listen for when accordions open or close
-//                        document.addEventListener('toggle', toggleHandler, true);
-//
-//                    };
-//
-//
-//                    //
-//                    // Initialized and return the Public APIs
-//                    //
-//
-//                    publicAPIs.init();
-//                    return publicAPIs;
-//
-//                };
-//
-//
-//                //
-//                // Return the Constructor
-//                //
-//
-//                return Constructor;
-//
-//            })();
-//
-//            // Instantiate plugin
-//            var accordion = new Accordions('[data-accordion="1"]');
-//            var otherAccordion = new Accordions('[data-accordion="2"]');
-
+            // if (localStorage.getItem("cookieBannerDisplayed") != "True") {
+            //      document.querySelector(".cookie-banner").style.display = "flex";
+            //      localStorage.setItem("cookieBannerDisplayed", "True")
+            //  };
             
         </script>
         
