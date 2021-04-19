@@ -1,6 +1,6 @@
 <?php
     if($_POST["submit"]) {
-        $recipient="mark.boomer@9habu.com";
+        $recipient="bookings@bjso.org.uk,caroline.brown@bjso.org.uk,victor.currie@bjso.org.uk";
         $subject="Message from 9habu contact form";
         $senderFirst=$_POST["firstname"];
         $senderLast=$_POST["lastname"];
@@ -47,6 +47,36 @@
     
         <link rel="stylesheet" href="styles.css"/>
         
+        <style type="text/css">
+            details {
+                font: 16px "Open Sans", Calibri, sans-serif;
+                width: 95%;
+            }
+            details > summary {
+                padding: 2px 6px;
+                width: 95%;
+                background-color: #ddd;
+                border: none;
+                box-shadow: 3px 3px 4px black;
+                cursor: pointer;
+            }
+
+            details > p {
+                margin: 5px;
+            }
+
+            details[open] > summary {
+                background-color: #ccf;
+            }
+
+            details[open] > ul {
+                padding-left: 15px;
+                list-style: disc;
+                list-style-position: inside;
+                text-align: left;                    
+            }
+        </style>        
+
     </head>
 
     <body id="body-top">
@@ -64,7 +94,7 @@
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
                     <li><a href="#public-gallery">Dancing</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
-<!--                    <li><a href="#social-media">Contact Us</a></li>-->
+                    <!-- <li><a href="#social-media">Contact Us</a></li>-->
                 </ul>
             </nav>
         </header>
@@ -73,12 +103,12 @@
         <!-- ********************************************************************************** -->
         <!-- Cookie banner not displayed - it is displayed by JS if required on page load       -->
         <!-- ********************************************************************************** -->
-<!--
+        <!--
         <div class="cookie-banner" style="display: none">
             <p>Belfast Jazz Orchestra does not currently store cookies on your device. This may change <a href="">cookie policy</a> can go here</p>
             <button id="close-banner">&times;</button>
         </div>
--->
+        -->
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
@@ -103,7 +133,7 @@
             <div id="two-cols">
                 <div class="about-img"><img src="img/about.jpg" alt="About Belfast Jazz"></div>
                 <div class="about-bio">
-                <p>Formed in 1990 the Belfast Jazz Swing Orchestra is dedicated to playing songs by jazz greats such as Count Basie, Duke Ellington and Glenn Miller</p>
+                <p>Formed in 1990 The Belfast Jazz Swing Orchestra is dedicated to the performance and encouragement of Big Band swing and the jazz music of such composers as Count Basie, Duke Ellington, Glen Miller to name a few.</p>
                 </div>
             </div>
         </div>
@@ -121,12 +151,87 @@
                     <p><br>Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
                     A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
                     Victor has played at a wide variety of events across Northern Ireland. Victor was a member of the Belfast Wind Youth Orchestra and has been involved in television and theatre work for over 30 years. </p>
+                    
+                    <div data-accordion="1">
+                        <details>
+                            <summary>Musical Background</summary>
+                            <p>
+                                Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
+                                A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
+                                Victor has played at a wide variety of events across Northern Ireland. Victor was a member of the Belfast Wind Youth Orchestra and has been involved in television and theatre work for over 30 years.
+                            </p>
+                        </details>
+                    </div>
+
                 </li>
                 <li><h4>Soloist</h4>
                     <div><span class="musical-direction">Caroline Brown</span></div>
                     <img src="img/caroline-brown.jpg" alt="Caroline Brown>">
                     <p><br>Caroline serves the orchestra as chairperson and lead Soloist.<br><br> 
-                    Carolines jazz vocals, smooth, sophisicated and with a touch of the bules, are perfectly suited to deliver the repertoire of popular songs from the american songbook.</p>
+                    Carolines jazz vocals, smooth, sophisicated and with a touch of the blues, are perfectly suited to deliver the repertoire of popular songs from the american songbook.</p>
+
+                    <div data-accordion="2">
+                        <details>
+                            <summary>Musical Background</summary>
+                            
+                            <p><br>Caroline sings with the Belfast Jazz Orchestra, a 20 piece Big Band and is also available for Corporate/Charity Events, Weddings and Private Parties with her 2 piece or 5-6 piece band, with accompanists Ivan Black, Victor Currie, Scott Flanagan amd Steve Barnett<br><br>Her voice is ideally suited to the repertoire of the great American Song Book...smooth, sophisticated swing jazz with a little touch of blues.<br><br>Caroline has also had an extensive and distinguished background in musical theatre having won awards for performances in Lead Principle roles<br></p>
+
+                            <ul>
+                                <li>Chicago (Velma Kelly)</li>
+                                <li>The Hot Mikado (Katisha - Blues/Jazz Version)</li>
+                                <li>Annie (Miss Hannigan)</li>
+                                <li>Sweet Charity (Niki)</li>
+                                <li>42nd Street (Dorothy Brock)</li>
+                                <li>Anything Goes (Reno)</li>
+                                <li>Carousel (Nettie Fowler)</li>
+                            </ul>
+                            <br>
+                            <p>Caroline has performed as a soloist at a variety of venues throughout Northern Ireland and Europe</p>
+
+                            <ul>
+                                <li>Waterfront Concert Hall Belfast</li>
+                                <li>The Grand Opera House</li>
+                                <li>National Concert Hall Dublin</li>
+                                <li>Arts Theatre</li>
+                                <li>Ulster Hall</li>
+                                <li>BT Studio</li>
+                            </ul>
+                            <br>    
+                            <p>Her repertoire from "The Great American Songbook", includes classics like</p>
+
+                            <ul>
+                                <li>Sentimental Journey</li>
+                                <li>That Old Black Magic</li>
+                                <li>Fly me to the Moon</li>
+                                <li>The Lady is the Tramp</li>
+                                <li>Embraceable You</li>
+                                <li>That Ole Devil Called Love</li>
+                                <li>At Last</li>
+                                <li>Summertime</li>
+                                <li>Georgia</li>
+                                <li>Paper Moon</li>
+                                <li>Sway</li>
+                                <li>Blueberry Hill</li>
+                                <li>The Man I Love</li>
+                            </ul>
+                            <br>                                        
+                            <p>Caroline has performed with many bands, including</p>
+                                
+                            <ul>
+                                <li>Victor Currie Swing Band</li>
+                                <li>Apex Jazz Band</li>
+                                <li>Easyjazz</li>
+                                <li>Panama</li>
+                                <li>Martello Jazz Band</li>
+                                <li>Kings of Swing</li>
+                                <li>The Dixies</li>
+                                <li>Bourbon Swing</li>
+                                <li>Downshire Jazz Band</li>
+                            </ul>
+                                
+                        </details>
+                    </div>
+                    
                 </li>
             </ul>
         </div>            
@@ -162,7 +267,7 @@
             </div>
         </div>
         <hr>
-	-->
+	    -->
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
@@ -176,7 +281,7 @@
             <ul class="grid">
                 <li><h3>May Day - CANCELLED</h3>
                     <h4>Friday, 29th May</h4>
-<!--                    <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>-->
+                    <!-- <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Swing Dance Lesson</li>
@@ -189,7 +294,7 @@
                 </li>
                 <li><h3>St. Patricks Day - CANCELLED</h3>
                     <h4>Tuesday, 17th March</h4>
-<!--                    <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>-->
+                    <!-- <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Dance Lesson</li>
@@ -202,7 +307,7 @@
                 </li>
                 <li><h3>Valentines Day</h3>
                     <h4>Friday, 14th February</h4>
-<!--                    <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>-->
+                    <!-- <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>-->
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Rumba Dance Lesson</li>
@@ -225,18 +330,7 @@
             <p>Images of the Belfast Jazz Orchestra performing at some of their favourite venues</p>
 
             <div id="galleryCarousel" class="carousel slide" data-interval="false" touch="true">
-<!--
 
-                <ol class="carousel-indicators">
-                    <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="1"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="2"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="3"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="4"></li>
-                    <li data-target="#galleryCarousel" data-slide-to="5"></li>
-                </ol>
-                
--->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/gallery-brass-section.jpg" class="d-block w-100 center-image" alt="Brass Section">
@@ -300,18 +394,7 @@
             <p>Swing, Lindy, Cha-cha, Waltz, Charleston...and some great costumes</p>        
             
             <div id="publicGalleryCarousel" class="carousel slide" data-interval="false" touch="true">
-<!--
 
-              <ol class="carousel-indicators">
-                <li data-target="#publicGalleryCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="1"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="2"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="3"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="4"></li>
-                <li data-target="#publicGalleryCarousel" data-slide-to="5"></li>
-              </ol> 
-                
--->
                 <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/publc-fancydress-2018.jpg" class="d-block w-100 center-image" alt="Fancy Dress Halloween 2018">
@@ -450,6 +533,13 @@
         <script type="text/javascript">
             
             // ------------------------------------------------------------------------------------------------//
+            // AVOID FORM SUBMISSION AFTER REFRESH                                                             //
+            // ------------------------------------------------------------------------------------------------//
+            if ( window.history.replaceState ) {
+                window.history.replaceState( null, null, window.location.href );
+            }
+            
+            // ------------------------------------------------------------------------------------------------//
             // ADD CLICK EVENT LISTENER FOR THE DOM                                                            //
             // ------------------------------------------------------------------------------------------------//
 
@@ -468,11 +558,11 @@
             // --------------------------------------------------------------------------------------------------------------//
             // if localStorage cookieBannerDisplayed=False, then display the cookie banner and set cookieBannerDisplayed=True   //
             // -----------------------------------------------------------------------------------------------------------------//
-//            if (localStorage.getItem("cookieBannerDisplayed") != "True") {
-//                document.querySelector(".cookie-banner").style.display = "flex";
-//                localStorage.setItem("cookieBannerDisplayed", "True")
-//            };
-
+            // if (localStorage.getItem("cookieBannerDisplayed") != "True") {
+            //      document.querySelector(".cookie-banner").style.display = "flex";
+            //      localStorage.setItem("cookieBannerDisplayed", "True")
+            //  };
+            
         </script>
         
     </body>
