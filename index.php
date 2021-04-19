@@ -47,6 +47,18 @@
     
         <link rel="stylesheet" href="styles.css"/>
         
+        <style type="text/css">
+            summary {
+                font-weight: bold;
+                margin-bottom: 0.25em;
+            }
+
+            p {
+                margin: 0 0 1.5em;
+                padding: 0;
+            }
+        </style>        
+
     </head>
 
     <body id="body-top">
@@ -121,12 +133,92 @@
                     <p><br>Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
                     A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
                     Victor has played at a wide variety of events across Northern Ireland. Victor was a member of the Belfast Wind Youth Orchestra and has been involved in television and theatre work for over 30 years. </p>
+                    
+                    <div data-accordion="1">
+                        <details>
+                            <summary style="text-align: left; border-radius: 0px;">Show More...</summary>
+                            <p>
+                                Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
+                                A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
+                                Victor has played at a wide variety of events across Northern Ireland. Victor was a member of the Belfast Wind Youth Orchestra and has been involved in television and theatre work for over 30 years.
+                            </p>
+                        </details>
+                    </div>
+
                 </li>
                 <li><h4>Soloist</h4>
                     <div><span class="musical-direction">Caroline Brown</span></div>
                     <img src="img/caroline-brown.jpg" alt="Caroline Brown>">
                     <p><br>Caroline serves the orchestra as chairperson and lead Soloist.<br><br> 
-                    Carolines jazz vocals, smooth, sophisicated and with a touch of the bules, are perfectly suited to deliver the repertoire of popular songs from the american songbook.</p>
+                    Carolines jazz vocals, smooth, sophisicated and with a touch of the blues, are perfectly suited to deliver the repertoire of popular songs from the american songbook.</p>
+
+                    <div data-accordion="2" style="text-align: left">
+                        <details>
+                            <summary>Show More...</summary>
+                            <p>
+                                Caroline sings with the Belfast Jazz Orchestra, a 20 piece Big Band and is also available for Corporate/Charity Events, Weddings and Private Parties with her 2 piece or 5-6 piece band, with accompanists Ivan Black, Victor Currie, Scott Flanagan amd Steve Barnett<br>
+                                <br>
+                                Carolines voice is ideally suited to the repertoire of the great American Song Book, smooth, sophisticated swing jazz with a little touch of blues.<br>
+                                <br>
+                                Caroline has had an extensive and distinguished background in musical theatre having won awards for performances in Lead Principle roles such as:<br>
+                            </p>
+
+                            <ul style="list-style: disc; list-style-position: inside;">
+                                <li>Chicago (Velma Kelly)</li>
+                                <li>The Hot Mikado (Katisha - Blues/Jazz Version)</li>
+                                <li>Annie (Miss Hannigan)</li>
+                                <li>Sweet Charity (Niki)</li>
+                                <li>42nd Street (Dorothy Brock)</li>
+                                <li>Anything Goes (Reno)</li>
+                                <li>Carousel (Nettie Fowler)</li>
+                            </ul>
+                            <br>
+                            <p>She has performed as a soloist at a variety of venues throughout Northern Ireland and Europe</p>
+
+                            <ul style="list-style: disc; list-style-position: inside;">
+                                <li>Waterfront Concert Hall Belfast</li>
+                                <li>The Grand Opera House</li>
+                                <li>National Concert Hall Dublin</li>
+                                <li>Arts Theatre</li>
+                                <li>Ulster Hall</li>
+                                <li>BT Studio</li>
+                            </ul>
+                            <br>    
+                            <p>Caroline sings "Easy Swing Jazz" music from "The Great American Songbook", classics such as</p>
+
+                            <ul style="list-style: disc; list-style-position: inside;">
+                                <li>Sentimental Journey</li>
+                                <li>That Old Black Magic</li>
+                                <li>Fly me to the Moon</li>
+                                <li>The Lady is the Tramp</li>
+                                <li>Embraceable You</li>
+                                <li>That Ole Devil Called Love</li>
+                                <li>At Last</li>
+                                <li>Summertime</li>
+                                <li>Georgia</li>
+                                <li>Paper Moon</li>
+                                <li>Sway</li>
+                                <li>Blueberry Hill</li>
+                                <li>The Man I Love</li>
+                            </ul>
+                            <br>                                        
+                            <p>Caroline has performed with other bands, like</p>
+                                
+                            <ul style="list-style: disc; list-style-position: inside;">
+                                <li>Victor Currie Swing Band</li>
+                                <li>Apex</li>
+                                <li>Easyjazz</li>
+                                <li>Panama</li>
+                                <li>Martello</li>
+                                <li>Kings of Swing</li>
+                                <li>The Dixies</li>
+                                <li>Bourbon Swing</li>
+                                <li>Downshire Jazz Band</li>
+                            </ul>
+                                
+                        </details>
+                    </div>
+                    
                 </li>
             </ul>
         </div>            
@@ -473,6 +565,127 @@
 //                localStorage.setItem("cookieBannerDisplayed", "True")
 //            };
 
+//            /**
+//             * Progressively Enhanced Accordion Components
+//             * (c) 2020 Chris Ferdinandi, MIT License, https://gomakethings.com
+//             */
+//            var Accordions = (function () {
+//
+//                'use strict';
+//
+//
+//                //
+//                // Methods
+//                //
+//
+//                /**
+//                 * Close any existing open accordion elements
+//                 * @param  {Node} current The current element being opened
+//                 * @param  {Node} parent  The wrapper for all sibling accordions
+//                 */
+//                var closeOthers = function (current, parent) {
+//
+//                    // Get all open accordions inside parent
+//                    var opened = Array.from(parent.querySelectorAll('details[open]'));
+//
+//                    // Close open ones that aren't current accordion
+//                    opened.forEach(function (accordion) {
+//                        if (accordion === current) return;
+//                        accordion.removeAttribute('open');
+//                    });
+//
+//                };
+//
+//                /**
+//                 * Handle toggle event on an accordion element
+//                 * @param  {Event} event     The Event object
+//                 * @param  {String} selector The accordion group selector
+//                 */
+//                var toggle = function (event, selector) {
+//
+//                    // Only run on accordions inside our selector
+//                    var parent = event.target.closest(selector);
+//                    if (!parent) return;
+//
+//                    // Only run if accordion is open
+//                    if (!event.target.hasAttribute('open')) return;
+//
+//                    // Close any existing open accordions
+//                    closeOthers(event.target, parent);
+//
+//                };
+//
+//
+//                /**
+//                 * Create the Constructor object
+//                 */
+//                var Constructor = function (selector) {
+//
+//                    //
+//                    // Variables
+//                    //
+//
+//                    var publicAPIs = {};
+//
+//
+//                    //
+//                    // Methods
+//                    //
+//
+//                    /**
+//                     * Handle toggle events
+//                     * @param  {Event} event The Event object
+//                     */
+//                    var toggleHandler = function (event) {
+//                        toggle(event, selector);
+//                    };
+//
+//                    /**
+//                     * Destroy the current instantiation
+//                     */
+//                    publicAPIs.destroy = function () {
+//                        document.removeEventListener('toggle', toggleHandler, true);
+//                    };
+//
+//                    /**
+//                     * Initialize a new instantiation
+//                     */
+//                    publicAPIs.init = function () {
+//
+//                        // Check for errors
+//                        if (!selector || typeof selector !== 'string') {
+//                            throw new Error('Please provide a valid selector');
+//                        }
+//
+//                        // Listen for when accordions open or close
+//                        document.addEventListener('toggle', toggleHandler, true);
+//
+//                    };
+//
+//
+//                    //
+//                    // Initialized and return the Public APIs
+//                    //
+//
+//                    publicAPIs.init();
+//                    return publicAPIs;
+//
+//                };
+//
+//
+//                //
+//                // Return the Constructor
+//                //
+//
+//                return Constructor;
+//
+//            })();
+//
+//            // Instantiate plugin
+//            var accordion = new Accordions('[data-accordion="1"]');
+//            var otherAccordion = new Accordions('[data-accordion="2"]');
+
+            
         </script>
         
     </body>
