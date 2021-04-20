@@ -147,19 +147,14 @@
             <ul class="grid">
                 <li><h4>Musical Director</h4>
                     <div><span class="musical-direction">Victor Currie</span></div>
-                    <img src="img/victor-currie.jpg" alt="Victor Curry>">
-                    <p><br>Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
-                    A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
+                    <img src="img/victor-currie.jpg" alt="Victor Curry">
+                    <p><br>A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
                     Victor has played at a wide variety of events across Northern Ireland. Victor was a member of the Belfast Wind Youth Orchestra and has been involved in television and theatre work for over 30 years. </p>
                     
                     <div data-accordion="1">
                         <details>
                             <summary>Musical Background</summary>
-                            <p>
-                                Victor served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br> 
-                                A talented musican in his own right, Victor conducts his own band, the "Victor Currie Band", where he also plays clarinet and saxaphone.<br><br> 
-                                Victor has played at a wide variety of events across Northern Ireland. Victor was a member of the Belfast Wind Youth Orchestra and has been involved in television and theatre work for over 30 years.
-                            </p>
+                            <p><br>Victor has been a music educator for over 30 years, he served as musical director for Dromore high School and was an instrumental music tutor for the SEELB Music Service and Lisburn Saxaphone Ensemble.<br><br>Victor has had a long career as a working musician playing clarinet and saxophone with all types of bands over the years. He has played at musicals, shows, concerts and has been involved in television and radio recording.<br><br>Victor fronts his own smaller band and enjoys a wide range of musical styles.<br><br>Victor enjoys working with the members of the Belfast Swing Jazz Orchestra and has been delighted with the improvement over recent years and is delighted with the audience and dancers response to the music programmes.</p>
                         </details>
                     </div>
 
@@ -167,8 +162,8 @@
                 <li><h4>Soloist</h4>
                     <div><span class="musical-direction">Caroline Brown</span></div>
                     <img src="img/caroline-brown.jpg" alt="Caroline Brown>">
-                    <p><br>Caroline serves the orchestra as chairperson and lead Soloist.<br><br> 
-                    Carolines jazz vocals, smooth, sophisicated and with a touch of the blues, are perfectly suited to deliver the repertoire of popular songs from the american songbook.</p>
+                    <p><br>Caroline serves the orchestra as chairperson and lead soloist. She also performs with her own 2 piece or 5-6 piece band.<br><br> 
+                    Carolines jazz vocals, smooth, sophisicated and with a touch of the blues, are perfectly suited to deliver the repertoire of popular songs from the american songbook.<br></p>
 
                     <div data-accordion="2">
                         <details>
