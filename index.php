@@ -40,12 +40,15 @@
         
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-        <!-- Load Bootstrap CDN -->
+<!--
+         Load Bootstrap CDN 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+-->
     
         <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="styles-carousel.css"/>
         
         <style type="text/css">
             details {
@@ -323,7 +326,7 @@
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
-
+        <!--
         <div id="gallery">
             <h3 class="title">Gallery</h3>
             <p>Images of the Belfast Jazz Orchestra performing at some of their favourite venues</p>
@@ -385,9 +388,11 @@
             </div> 
         </div>
         <hr>
+        -->
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
+        <!--
         <div id="public-gallery">
             <h3 class="title">Theres always lots of dancing, singing and glamour</h3>
             <p>Swing, Lindy, Cha-cha, Waltz, Charleston...and some great costumes</p>        
@@ -449,12 +454,73 @@
             </div> 
         </div>
         <hr>
+        -->
         <!-- ********************************************************************************** -->
         
+        
+        <!-- ********************************************************************************** -->
+        <!-- Gallery Slideshow container -->
+        <div id="gallery">
+            
+            <div class="gallerySlideshow">
+            
+                <h3 class="title">Gallery</h3>
+                <p>The Belfast Jazz Orchestra performing at some of their favourite venues</p>
+
+                <!-- Full-width images with number and caption text -->
+                <div class="gallerySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%">
+                    <div class="text">Caroline Brown</div>
+                </div>
+
+                <div class="gallerySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%">
+                    <div class="text">Shorts Rec</div>
+                </div>
+
+                <div class="gallerySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%">
+                    <div class="text">St Annes Cathedral</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+<!--
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+-->
+            
+                <!-- Next and previous buttons -->
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            
+            </div> <!-- end of "gallerySlideshow -->
+
+            <br>            
+            <!-- The dots/circles -->
+            <div id="galleryDots" style="text-align:center">
+              <span id="1" class="dot"></span>
+              <span id="2" class="dot"></span>
+              <span id="3" class="dot"></span>
+            </div>
+            <br>            
+
+        </div>
+        
+        <br>
+        
+        <hr>
+    
+        <!-- ********************************************************************************** -->
+
+
         <!-- ********************************************************************************** -->
         <div id="shorts-rec">
             <h3 class="title">Shorts Sports and Recreation Club</h3>
-            <p>The Belfast Jazz Swing Orchestra play regularly at Shorts Sports &amp; Recreation Club</p>            
+            <p>The Belfast Jazz Swing Orchestra play regularly at Shorts Sports &amp; Recreation Club</p> 
+           <br>
             
             <section class="flexbox-section">
                 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2310.4525142933817!2d-5.868228184560744!3d54.613636886732536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486109882aefe66b%3A0xbcba9519915a79e2!2sShorts%20Sports%20%26%20Recreational%20Club!5e0!3m2!1sen!2suk!4v1582622869891!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
@@ -492,7 +558,7 @@
                 </section>
                 <section id="right-col">
                     <fieldset>
-                        <legend>Booking Query</legend>
+                        <legend>Enquiry</legend>
                         <!-- this input field will be hidden as part of the spam protection -->
                         <input    id="subject" name="subject" type="text"  placeholder="Subject" tabindex="5">
                         <textarea id="message" name="message" rows="10" placeholder="Please include date, time and location required..." tabindex="6"></textarea>
@@ -512,7 +578,7 @@
                 <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
             </ul>
             <p>&copy; <script>document.write(new Date().getFullYear());</script> Belfast Jazz Swing Orchestra</p>
-<!--            <p>Dance like no-one is watching - Sing like no one is listening</p>      -->
+            <!-- <p>Dance like no-one is watching - Sing like no one is listening</p>      -->
         </footer>
         <!-- ********************************************************************************** -->
 
@@ -524,15 +590,64 @@
         <!-- **************************************************************************************
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         ******************************************************************************************* -->
+<!--
 
         <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+-->
 
         <script type="text/javascript">
             
+            // initial slide show to first slide
+            let slideIndex = 1;    
+            // show the first slide
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            // ------------------------------------------------------------------------------------------------//
+            // Show the slides                                                                                 //
+            // ------------------------------------------------------------------------------------------------//
+            function showSlides(n) {
+
+                let slides = document.getElementsByClassName("gallerySlides");
+                let dots   = document.getElementsByClassName("dot");
+
+                if (n > slides.length) {
+                    slideIndex = 1
+                } else if (n < 1) {
+                  slideIndex = slides.length
+                }
+    
+                // hide all the slides
+                for (let i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+              
+                // remove the active class from the dots
+                for (let i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+
+                // display the slide for slideId
+                slides[slideIndex-1].style.display = "block";
+
+                // make the matching dot the active dot
+                dots[slideIndex-1].className += " active";
+            
+            }
+
             // ------------------------------------------------------------------------------------------------//
             // AVOID FORM SUBMISSION AFTER REFRESH                                                             //
             // ------------------------------------------------------------------------------------------------//
@@ -553,6 +668,29 @@
                     document.querySelector(".cookie-banner").style.display = "none";
                 }
 
+                // -------------------------------------------------------------------------------------------------//
+                // event listener for the dot class                                                                 //
+                // -------------------------------------------------------------------------------------------------//
+                if (event.target.matches('.dot')) {
+                    // get the slide number from the id if the dot clicked on
+                    slideId = event.target.id
+                    currentSlide(slideId)                    
+                }
+
+                // -------------------------------------------------------------------------------------------------//
+                // event listener for the next class                                                                 //
+                // -------------------------------------------------------------------------------------------------//
+                if (event.target.matches('.next')) {
+                    plusSlides(1)                
+                }
+
+                // -------------------------------------------------------------------------------------------------//
+                // event listener for the prev class                                                                 //
+                // -------------------------------------------------------------------------------------------------//
+                if (event.target.matches('.prev')) {
+                    plusSlides(-1)                
+                }
+                
             }, false);     // end of DOM CLICK eventlistener
             // --------------------------------------------------------------------------------------------//         
 
