@@ -131,7 +131,7 @@
         <div id="about">
             <h3 class="title">about belfast Jazz Swing Orchestra</h3>
             <div id="two-cols">
-                <div class="about-img"><img src="img/about.jpg" alt="About Belfast Jazz"></div>
+                <div class="about-img"><img src="img/about.jpg" alt="Victor Currie On Saxaphone"></div>
                 <div class="about-bio">
                 <p>Formed in 1990 The Belfast Jazz Swing Orchestra is dedicated to the performance and encouragement of Big Band swing and the jazz music of such composers as Count Basie, Duke Ellington, Glen Miller to name a few.</p>
                 </div>
@@ -270,13 +270,15 @@
             <h3 class="title">2021 Events</h3>
             <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p>
 
+<!-- This can be replaced with any event information for 2021
+
             <h3 class="title">2020 Events</h3>
             <p>The Belfast Jazz Swing Orchestra played at the following events in Shorts Sports &amp; Recreation Club</p>
- 
+
             <ul class="grid">
                 <li><h3>May Day - CANCELLED</h3>
                     <h4>Friday, 29th May</h4>
-                    <!-- <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>-->
+                     <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Swing Dance Lesson</li>
@@ -289,7 +291,7 @@
                 </li>
                 <li><h3>St. Patricks Day - CANCELLED</h3>
                     <h4>Tuesday, 17th March</h4>
-                    <!-- <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>-->
+                     <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Dance Lesson</li>
@@ -302,7 +304,7 @@
                 </li>
                 <li><h3>Valentines Day</h3>
                     <h4>Friday, 14th February</h4>
-                    <!-- <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>-->
+                     <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>
                     <div class="event-desc">
                         <ul>
                             <li>7:30pm - Free Rumba Dance Lesson</li>
@@ -314,7 +316,9 @@
                     </div>
                 </li>
             </ul>
+-->
         </div>
+
         <hr>
         <!-- ********************************************************************************** -->
 
@@ -450,6 +454,8 @@
         <!-- ********************************************************************************** -->
         <div id="shorts-rec">
             <h3 class="title">Shorts Sports and Recreation Club</h3>
+            <p>The Belfast Jazz Swing Orchestra play regularly at Shorts Sports &amp; Recreation Club</p>            
+            
             <section class="flexbox-section">
                 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2310.4525142933817!2d-5.868228184560744!3d54.613636886732536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486109882aefe66b%3A0xbcba9519915a79e2!2sShorts%20Sports%20%26%20Recreational%20Club!5e0!3m2!1sen!2suk!4v1582622869891!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
                 <p>Shorts Sports & Recreation Club,<br>
@@ -506,7 +512,7 @@
                 <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
             </ul>
             <p>&copy; <script>document.write(new Date().getFullYear());</script> Belfast Jazz Swing Orchestra</p>
-            <p>Dance like no-one is watching - Sing like no one is listening</p>      
+<!--            <p>Dance like no-one is watching - Sing like no one is listening</p>      -->
         </footer>
         <!-- ********************************************************************************** -->
 
