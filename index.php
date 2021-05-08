@@ -39,47 +39,10 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
         
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-<!--
-         Load Bootstrap CDN 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
--->
     
         <link rel="stylesheet" href="styles.css"/>
         <link rel="stylesheet" href="styles-carousel.css"/>
         
-        <style type="text/css">
-            details {
-                font: 16px "Open Sans", Calibri, sans-serif;
-                width: 95%;
-            }
-            details > summary {
-                padding: 2px 6px;
-                width: 95%;
-                background-color: #ddd;
-                border: none;
-                box-shadow: 3px 3px 4px black;
-                cursor: pointer;
-            }
-
-            details > p {
-                margin: 5px;
-            }
-
-            details[open] > summary {
-                background-color: #ccf;
-            }
-
-            details[open] > ul {
-                padding-left: 15px;
-                list-style: disc;
-                list-style-position: inside;
-                text-align: left;                    
-            }
-        </style>        
-
     </head>
 
     <body id="body-top">
@@ -117,14 +80,7 @@
         <!-- ********************************************************************************** -->
         <div id="hero">
             <div class="background-image">
-                <!-- <h1>Belfast Jazz Swing Orchestra</h1>-->
-                
-                <!-- <h3>Dedicated to performances of Count Basie, Duke Ellington & Glenn Miller</h3> -->
                  <img src="img/hero.jpg" alt="Belfast Jazz Swing Orchestra">;
-
-                <!-- *********** add this as a link in the navigation ******************************************
-                    <a href="https://shortsclub.com/" class="btn" target="_blank">Shorts Sport & Recreation Club</a>
-                 -->
             </div>
         </div>
         <hr>
@@ -249,31 +205,13 @@
         <hr>
         <!-- ********************************************************************************** -->
 
-        <!-- ********************************************************************************** -->
-        <!-- 
-        <div id="jazz-legends">
-            <h3 class="title">Jazz Legends</h3>
-            <div>
-                <ul class="grid">
-                    <li><img src="img/jazz-duke-ellington.jpg" alt="Duke Ellington"></li>
-                    <li><img src="img/jazz-glenn-miller.jpg" alt="Glenn MIller"></li>
-                    <li><img src="img/jazz-louis-armstrong.jpg" alt="Louis Armstrong"></li>
-                    <li><img src="img/jazz-girl-trombone.jpg" alt="Girl Trombone"></li>
-                    <li><img src="img/jazz-miles-davies.jpg" alt="Miles Davies"></li>
-                    <li><img src="img/jazz-billie-holiday.jpg" alt="Billie Holiday"></li>
-                </ul>                
-            </div>
-        </div>
-        <hr>
-	    -->
-        <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
         <div id="events">
             <h3 class="title">2021 Events</h3>
             <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p>
 
-<!-- This can be replaced with any event information for 2021
+            <!-- This can be replaced with any event information for 2021
 
             <h3 class="title">2020 Events</h3>
             <p>The Belfast Jazz Swing Orchestra played at the following events in Shorts Sports &amp; Recreation Club</p>
@@ -319,141 +257,36 @@
                     </div>
                 </li>
             </ul>
--->
-        </div>
-
-        <hr>
-        <!-- ********************************************************************************** -->
-
-        <!-- ********************************************************************************** -->
-        <!--
-        <div id="gallery">
-            <h3 class="title">Gallery</h3>
-            <p>Images of the Belfast Jazz Orchestra performing at some of their favourite venues</p>
-
-            <div id="galleryCarousel" class="carousel slide" data-interval="false" touch="true">
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/gallery-brass-section.jpg" class="d-block w-100 center-image" alt="Brass Section">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Saxaphones</h5>
-                            <p>St. Annes Cathedral</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/gallery-saint-annes.jpg" class="d-block w-100 center-image" alt="Brass Section">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Trombones</h5>
-                            <p>St. Annes Cathedral</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/gallery-saint-annes-1.jpg" class="d-block w-100 center-image" alt="The Orchestra">
-                            <div class="carousel-caption d-none d-md-block">
-                            <h5>Caroline</h5>
-                        <p>St. Annes Cathedral</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/gallery-saint-annes-2.jpg" class="d-block w-100 center-image" alt="Packed audience">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Packed Audience</h5>
-                            <p>St. Annes Cathedral</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/gallery-scott-naomi.jpg" class="d-block w-100 center-image" alt="Scott and Naomi">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Scott and Naomi</h5>
-                            <p>Jazz in the park</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/gallery-shorts.jpg" class="d-block w-100 center-image" alt="Shorts Rec">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Shorts Recreation Club</h5>
-                            <p>Bringing some glamour to Shorts Recreation Club</p>
-                        </div>
-                    </div>
-                </div>
-              <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div> 
-        </div>
-        <hr>
         -->
+        </div> <!-- End Of Events -->
+        
+        <hr>
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
         <!--
-        <div id="public-gallery">
-            <h3 class="title">Theres always lots of dancing, singing and glamour</h3>
-            <p>Swing, Lindy, Cha-cha, Waltz, Charleston...and some great costumes</p>        
-            
-            <div id="publicGalleryCarousel" class="carousel slide" data-interval="false" touch="true">
+            <img src="img/publc-fancydress-2018.jpg" class="d-block w-100 center-image" alt="Fancy Dress Halloween 2018">
+            <h5>Halloween Fancy Dress 2018</h5>
+            <p>The winners circle - although they were the only ones to turn up in costume</p>
 
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/publc-fancydress-2018.jpg" class="d-block w-100 center-image" alt="Fancy Dress Halloween 2018">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>Halloween Fancy Dress 2018</h5>
-                    <p>The winners circle - although they were the only ones to turn up in costume</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/public-dancelesson.jpg" class="d-block w-100 center-image" alt="Dance Lessons">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>Dance Lessons</h5>
-                    <p>Swing Belfast leading the way</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/public-fancydress-2019.jpg" class="d-block w-100 center-image" alt="Fancy Dress 2019">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>Halloween Fancy Dress 2019</h5>
-                    <p>Not very scary...but at least everyone made an effort this year</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/public-xmas-2019.jpg" class="d-block w-100 center-image" alt="Christmas 2019">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>Christmas 2019</h5>
-                    <p>All dressed up and somewhere to go...looking stylish on the dance floor</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/public-dancers.jpg" class="d-block w-100 center-image" alt="Dancers filling the floor">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>Dancers filling the floor</h5>
-                    <p>Hard to get room to strut your stuff some times</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/public-belfastswing.jpg" class="d-block w-100 center-image" alt="Swing Belfast">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>Belfast Swing</h5>
-                    <p>Always a good turn out and nowhere better to show off some lindy</p>
-                    </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#publicGalleryCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#publicGalleryCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div> 
-        </div>
-        <hr>
+            <img src="img/public-dancelesson.jpg" class="d-block w-100 center-image" alt="Dance Lessons">
+            <h5>Dance Lessons</h5>
+            <p>Swing Belfast leading the way</p>
+
+            <img src="img/public-fancydress-2019.jpg" class="d-block w-100 center-image" alt="Fancy Dress 2019">                    <h5>Halloween Fancy Dress 2019</h5>
+            <p>Not very scary...but at least everyone made an effort this year</p>
+
+            <img src="img/public-xmas-2019.jpg" class="d-block w-100 center-image" alt="Christmas 2019">
+            <h5>Christmas 2019</h5>
+            <p>All dressed up and somewhere to go...looking stylish on the dance floor</p>
+
+            <img src="img/public-dancers.jpg" class="d-block w-100 center-image" alt="Dancers filling the floor">
+            <h5>Dancers filling the floor</h5>
+            <p>Hard to get room to strut your stuff some times</p>
+
+            <img src="img/public-belfastswing.jpg" class="d-block w-100 center-image" alt="Swing Belfast">
+            <h5>Belfast Swing</h5>
+            <p>Always a good turn out and nowhere better to show off some lindy</p>
         -->
         <!-- ********************************************************************************** -->
         
@@ -470,29 +303,79 @@
                 <!-- Full-width images with number and caption text -->
                 <div class="gallerySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%">
-                    <div class="text">Caroline Brown</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
+                    <div class="slideText">Caroline Brown</div>
                 </div>
 
                 <div class="gallerySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%">
-                    <div class="text">Shorts Rec</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
+                    <div class="slideText">Shorts Rec</div>
                 </div>
 
                 <div class="gallerySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%">
-                    <div class="text">St Annes Cathedral</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
+                    <div class="slideText">St Annes Cathedral</div>
                 </div>
 
-                <!-- Next and previous buttons -->
-<!--
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
--->
+                <!-- Next and previous buttons heavyrightanglebracket heavyleftanglebracket-->
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
             
-                <!-- Next and previous buttons -->
+            </div> <!-- end of "gallerySlideshow -->
+
+            <br>            
+
+            <!-- The dots/circles -->
+            <div id="galleryDots" style="text-align:center">
+              <span id="0" class="dot"></span>
+              <span id="1" class="dot"></span>
+              <span id="2" class="dot"></span>
+            </div>
+            <br>            
+
+        </div>
+        <br>        
+        <hr>    
+        <!-- ********************************************************************************** -->
+
+
+        <!-- ********************************************************************************** -->
+        <!-- Public Slideshow container -->
+        <div id="public-gallery">
+            
+            <div class="publicSlideshow">
+            
+                <h3 class="title">Theres always lots of dancing, singing and glamour</h3>
+                <p>Swing, Lindy, Cha-cha, Waltz, Charleston...and some great costumes</p>  
+
+                <!-- Full-width images with number and caption text -->
+                <div class="publicSlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
+                    <div class="slideText">Dance Lesson</div>
+                </div>
+
+                <div class="publicSlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
+                    <div class="slideText">Dancers</div>
+                </div>
+
+                <div class="publicSlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
+                    <div class="slideText">Christmas 2018</div>
+                </div>
+
+                <div class="publicSlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
+                    <div class="slideText">Christmas 2019</div>
+                </div>
+
+                <!-- Next and previous buttons heavyrightanglebracket heavyleftanglebracket-->
                 <a class="prev">&#10094;</a>
                 <a class="next">&#10095;</a>
             
@@ -500,21 +383,17 @@
 
             <br>            
             <!-- The dots/circles -->
-            <div id="galleryDots" style="text-align:center">
+            <div id="publicDots" style="text-align:center">
+              <span id="0" class="dot"></span>
               <span id="1" class="dot"></span>
               <span id="2" class="dot"></span>
               <span id="3" class="dot"></span>
             </div>
             <br>            
-
-        </div>
-        
+        </div>        
         <br>
-        
-        <hr>
-    
+        <hr>    
         <!-- ********************************************************************************** -->
-
 
         <!-- ********************************************************************************** -->
         <div id="shorts-rec">
@@ -561,7 +440,7 @@
                         <legend>Enquiry</legend>
                         <!-- this input field will be hidden as part of the spam protection -->
                         <input    id="subject" name="subject" type="text"  placeholder="Subject" tabindex="5">
-                        <textarea id="message" name="message" rows="10" placeholder="Please include date, time and location required..." tabindex="6"></textarea>
+                        <textarea id="message" name="message" rows="10" placeholder="If you are inquiring about the band availability then please include date, time and location required..." tabindex="6"></textarea>
                     </fieldset>
                     <div><input name="submit" type="submit" value="Submit Form" tabindex="7"></div>
                 </section>    
@@ -572,80 +451,78 @@
         <!-- ********************************************************************************** -->
         <footer id="social-media">
             <ul>
-                <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
                 <li><a href="https://www.facebook.com/BelfastJazzOrchestra/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
             </ul>
             <p>&copy; <script>document.write(new Date().getFullYear());</script> Belfast Jazz Swing Orchestra</p>
             <!-- <p>Dance like no-one is watching - Sing like no one is listening</p>      -->
         </footer>
         <!-- ********************************************************************************** -->
 
-        <!-- ********************************************************************************** -->
-
-        <!-- ************************************************************************************** -->
-        <!-- jquery slim doesnt include animations so cause an error with the stop() function above -->
-        <!-- using jquery full build resolves the issue                                             -->
-        <!-- **************************************************************************************
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        ******************************************************************************************* -->
-<!--
-
-        <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
--->
-
-        <script type="text/javascript">
+   <script type="text/javascript">
             
-            // initial slide show to first slide
-            let slideIndex = 1;    
-            // show the first slide
-            showSlides(slideIndex);
+            let carouselId = ["gallery", "public-gallery"]              
+            let showId     = ["gallerySlideshow", "publicSlideshow"]        
+            let slideId    = ["gallerySlides", "publicSlides"]              
+
+            let y
+            let slideIndex = [0, 0];   
+            console.log("Slide Index : " + slideIndex);
+
+            // show slide 1 for gallery 
+            showSlides(0, 0);
             
-            // Next/previous controls
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
+            // show slide 1 for public-gallery
+            showSlides(0, 1);
+
+            function currentSlide(n, no) {
+                showSlides(slideIndex[0] = n, no);  
             }
-            
-            // Thumbnail image controls
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
+
+            // n = 1 (next) or -1  (prev) no = slideshow number
+            function plusSlides(n, no) {
+                console.log("Before : " + slideIndex)
+                slideIndex[0] ++
+                showSlides(slideIndex[0], no);            
+                console.log("After : " + slideIndex)
             }
-            
-            // ------------------------------------------------------------------------------------------------//
-            // Show the slides                                                                                 //
-            // ------------------------------------------------------------------------------------------------//
-            function showSlides(n) {
 
-                let slides = document.getElementsByClassName("gallerySlides");
-                let dots   = document.getElementsByClassName("dot");
-
-                if (n > slides.length) {
-                    slideIndex = 1
-                } else if (n < 1) {
-                  slideIndex = slides.length
-                }
-    
-                // hide all the slides
-                for (let i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
+            // n = slide no   no = xxxxxxSlides
+            function showSlides(n, no) {                
+                
+                // console.log("SlideId[no] " + slideId[no])
+                
+                // SlideId[no] = gallerySlides or publicSlides
+                
+                let slides = document.getElementsByClassName(slideId[no]);
+                let show   = document.getElementById(carouselId[no]);                
+                let dots   = show.getElementsByClassName("dot");
+                
+                if (n > slides.length-1) {
+                    slideIndex[0] = 0
+                }    
+              
+                if (n < 0) {
+                    slideIndex[0] = slides.length-1
                 }
               
+                // hide all the images
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                
                 // remove the active class from the dots
                 for (let i = 0; i < dots.length; i++) {
                   dots[i].className = dots[i].className.replace(" active", "");
                 }
-
-                // display the slide for slideId
-                slides[slideIndex-1].style.display = "block";
-
+              
+                slides[slideIndex[0]].style.display = "block";  
+                
                 // make the matching dot the active dot
-                dots[slideIndex-1].className += " active";
-            
+                dots[slideIndex[0]].className += " active";
+                
             }
 
             // ------------------------------------------------------------------------------------------------//
@@ -672,25 +549,63 @@
                 // event listener for the dot class                                                                 //
                 // -------------------------------------------------------------------------------------------------//
                 if (event.target.matches('.dot')) {
-                    // get the slide number from the id if the dot clicked on
-                    slideId = event.target.id
-                    currentSlide(slideId)                    
+
+                    // get the slide number from the id of the dot clicked on
+                    dotId = event.target.id
+                    
+                    // get the parent ID of the dots
+                    let parentDots = event.target.parentNode.id
+                    // console.log("Parent Dots   : " + parentDots)
+                    
+                    // get the parent Slideshow of the Dots
+                    let parentSlideShow = event.target.parentNode.parentNode.id
+                    // console.log("Parent Slides : " + parentSlideShow)
+
+                    // get the index of the parent slide show class from the array
+                    parentId = carouselId.indexOf(parentSlideShow);
+                    // console.log("Parent Id : " + parentId)
+                    
+                    // display the current slide
+                    // showSlides(dotId, parentId)
+                    // currentSlide(dotId, parentId)
+
+                    slideIndex[0] = dotId
+                    slideIndex[1] = parentId
+
+                    showSlides(...slideIndex);
+                    
+                    console.log("Dot Id : " + dotId + " slideIndex : " + slideIndex)
                 }
 
                 // -------------------------------------------------------------------------------------------------//
-                // event listener for the next class                                                                 //
+                // event listener for the next / prev class                                                         //
                 // -------------------------------------------------------------------------------------------------//
-                if (event.target.matches('.next')) {
-                    plusSlides(1)                
+                if ( (event.target.matches('.prev')) || (event.target.matches('.next')) ) {
+                    
+                    // get the parent class of the slideshow
+                    parentSlideShow =  event.target.parentNode.className
+                    
+                    // console.log("Parent : " + parentSlideShow)
+
+                    // get the index of the parent slide show class from the array
+                    parentId = showId.indexOf(parentSlideShow);
+                    slideIndex[1] = parentId
+                    
+                    // console.log("Parent Id : " + parentId)
+
+                    if (event.target.matches('.next')) {
+                        slideIndex[0] ++
+                        showSlides(...slideIndex)
+                        // plusSlides(1, parentId)
+                    }                
+
+                    if (event.target.matches('.prev')) {
+                        slideIndex[0] --
+                        showSlides(...slideIndex)
+                        // plusSlides(-1, parentId)    
+                    }
                 }
 
-                // -------------------------------------------------------------------------------------------------//
-                // event listener for the prev class                                                                 //
-                // -------------------------------------------------------------------------------------------------//
-                if (event.target.matches('.prev')) {
-                    plusSlides(-1)                
-                }
-                
             }, false);     // end of DOM CLICK eventlistener
             // --------------------------------------------------------------------------------------------//         
 

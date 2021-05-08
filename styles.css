@@ -83,6 +83,36 @@ h3.title {
 #galleryCarousel .carousel-caption, #publicGalleryCarousel .carousel-caption {
     bottom: 20%;
 }
+/* ******************************************************************************************   */
+/*                            DETAILS SUMMARY - MUSICAL BACKGROUND                              */
+/* ******************************************************************************************   */
+details {
+    font: 16px "Open Sans", Calibri, sans-serif;
+    width: 95%;
+}
+details > summary {
+    padding: 2px 6px;
+    width: 95%;
+    background-color: #ddd;
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+}
+
+details > p {
+    margin: 5px;
+}
+
+details[open] > summary {
+    background-color: #ccf;
+}
+
+details[open] > ul {
+    padding-left: 15px;
+    list-style: disc;
+    list-style-position: inside;
+    text-align: left;                    
+}
 
 /* ******************************************************************************************   */
 /*                            COOKIE BANNER DISPLAY                                             */
