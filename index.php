@@ -69,12 +69,10 @@
         <!-- ********************************************************************************** -->
         <!-- Cookie banner not displayed - it is displayed by JS if required on page load       -->
         <!-- ********************************************************************************** -->
-        <!--
         <div class="cookie-banner" style="display: none">
-            <p>Belfast Jazz Orchestra does not currently store cookies on your device. This may change <a href="">cookie policy</a> can go here</p>
-            <button id="close-banner">&times;</button>
+            <p>This website does not use cookies to track how you interact with the website. The website does not share information with third parties or advertisers. Some cookies are necessary for the site to work. Please click "Accept Cookies" to continue.</p>
+            <button id="accept-cookies-btn">Accept Cookies</button>
         </div>
-        -->
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
@@ -208,88 +206,14 @@
 
         <!-- ********************************************************************************** -->
         <div id="events">
+
             <h3 class="title">2021 Events</h3>
             <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p>
 
-            <!-- This can be replaced with any event information for 2021
-
-            <h3 class="title">2020 Events</h3>
-            <p>The Belfast Jazz Swing Orchestra played at the following events in Shorts Sports &amp; Recreation Club</p>
-
-            <ul class="grid">
-                <li><h3>May Day - CANCELLED</h3>
-                    <h4>Friday, 29th May</h4>
-                     <p class="event-img"><img src="img/events-may29-2020.jpg" alt="May Day Ball"></p>
-                    <div class="event-desc">
-                        <ul>
-                            <li>7:30pm - Free Swing Dance Lesson</li>
-                            <li>8:30pm - Jazz Orchestra</li>
-                            <li>Entrance - £10 at the door</li>
-                            <li>Cash Bar</li>
-                            <li>Ballot/Prizes at interval</li>
-                        </ul>
-                    </div>
-                </li>
-                <li><h3>St. Patricks Day - CANCELLED</h3>
-                    <h4>Tuesday, 17th March</h4>
-                     <p class="event-img"><img src="img/events-mar17-2020.jpg" alt="St. Patricks Day"></p>
-                    <div class="event-desc">
-                        <ul>
-                            <li>7:30pm - Free Dance Lesson</li>
-                            <li>8:30pm - Jazz Orchestra</li>
-                            <li>Entrance - £10 at the door</li>
-                            <li>Cash Bar</li>
-                            <li>Ballot/Prizes at interval</li>
-                        </ul>
-                    </div>
-                </li>
-                <li><h3>Valentines Day</h3>
-                    <h4>Friday, 14th February</h4>
-                     <p class="event-img"><img src="img/events-feb14-2020.jpg" alt="Valentines Day"></p>
-                    <div class="event-desc">
-                        <ul>
-                            <li>7:30pm - Free Rumba Dance Lesson</li>
-                            <li>8:30pm - Jazz Orchestra</li>
-                            <li>Entrance - £10 at the door</li>
-                            <li>Cash Bar</li>
-                            <li>Ballot/Prizes at interval</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        -->
         </div> <!-- End Of Events -->
         
         <hr>
         <!-- ********************************************************************************** -->
-
-        <!-- ********************************************************************************** -->
-        <!--
-            <img src="img/publc-fancydress-2018.jpg" class="d-block w-100 center-image" alt="Fancy Dress Halloween 2018">
-            <h5>Halloween Fancy Dress 2018</h5>
-            <p>The winners circle - although they were the only ones to turn up in costume</p>
-
-            <img src="img/public-dancelesson.jpg" class="d-block w-100 center-image" alt="Dance Lessons">
-            <h5>Dance Lessons</h5>
-            <p>Swing Belfast leading the way</p>
-
-            <img src="img/public-fancydress-2019.jpg" class="d-block w-100 center-image" alt="Fancy Dress 2019">                    <h5>Halloween Fancy Dress 2019</h5>
-            <p>Not very scary...but at least everyone made an effort this year</p>
-
-            <img src="img/public-xmas-2019.jpg" class="d-block w-100 center-image" alt="Christmas 2019">
-            <h5>Christmas 2019</h5>
-            <p>All dressed up and somewhere to go...looking stylish on the dance floor</p>
-
-            <img src="img/public-dancers.jpg" class="d-block w-100 center-image" alt="Dancers filling the floor">
-            <h5>Dancers filling the floor</h5>
-            <p>Hard to get room to strut your stuff some times</p>
-
-            <img src="img/public-belfastswing.jpg" class="d-block w-100 center-image" alt="Swing Belfast">
-            <h5>Belfast Swing</h5>
-            <p>Always a good turn out and nowhere better to show off some lindy</p>
-        -->
-        <!-- ********************************************************************************** -->
-        
         
         <!-- ********************************************************************************** -->
         <!-- Gallery Slideshow container -->
@@ -302,21 +226,39 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="gallerySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
-                    <div class="slideText">Caroline Brown</div>
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/gallery-1.jpg" style="width:100%" alt="Xmas at Shorts Rec">
+                    <div class="slideText">Xmas at Shorts Recreation Center</div>
                 </div>
 
                 <div class="gallerySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
-                    <div class="slideText">Shorts Rec</div>
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/gallery-2.jpg" style="width:100%" alt="Sax appeal">
+                    <div class="slideText">Sax appeal</div>
                 </div>
 
                 <div class="gallerySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
-                    <div class="slideText">St Annes Cathedral</div>
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/gallery-3.jpg" style="width:100%" alt="Castle Ward">
+                    <div class="slideText">Summer at Castle Ward</div>
+                </div>
+
+                <div class="gallerySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/gallery-4.jpg" style="width:100%" alt="St. Annes Cathederal">
+                    <div class="slideText">Formal Attire - St. Annes Cathederal</div>
+                </div>
+
+                <div class="gallerySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/gallery-5.jpg" style="width:100%" alt="Caroline - resplendent in blue ">
+                    <div class="slideText">Caroline - resplendent in blue</div>
+                </div>
+
+                <div class="gallerySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/gallery-6.jpg" style="width:100%" alt="Scott & Naomi">
+                    <div class="slideText">Mount Stewart - Jazz In The Park</div>
                 </div>
 
                 <!-- Next and previous buttons heavyrightanglebracket heavyleftanglebracket-->
@@ -332,6 +274,9 @@
               <span id="0" class="dot"></span>
               <span id="1" class="dot"></span>
               <span id="2" class="dot"></span>
+              <span id="3" class="dot"></span>
+              <span id="4" class="dot"></span>
+              <span id="5" class="dot"></span>
             </div>
             <br>            
 
@@ -352,27 +297,39 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="publicSlides fade">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
-                    <div class="slideText">Dance Lesson</div>
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/public-1.jpg" style="width:100%" alt="Scott Naomi & Caroline">
+                    <div class="slideText">Scott Naomi - Jazz In The Park</div>
                 </div>
 
                 <div class="publicSlides fade">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
-                    <div class="slideText">Dancers</div>
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/public-2.jpg" style="width:100%" alt="Curtis - Dance Lesson">
+                    <div class="slideText">Dance Lesson with Curtis</div>
                 </div>
 
                 <div class="publicSlides fade">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
-                    <div class="slideText">Christmas 2018</div>
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/public-3.jpg" style="width:100%" alt="Swing Dance">
+                    <div class="slideText">Lindy or Swing?</div>
                 </div>
 
                 <div class="publicSlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="img/gallery-jazz-in-the-park.jpg" style="width:100%" alt="Jazz In The Park">
-                    <div class="slideText">Christmas 2019</div>
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/public-4.jpg" style="width:100%" alt="Scott & Naomi">
+                    <div class="slideText">Scott and Naomi - Lindy</div>
+                </div>
+
+                <div class="publicSlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/public-5.jpg" style="width:100%" alt="Fancy Dress Winners">
+                    <div class="slideText">Fancy Dress Winners - 2018</div>
+                </div>
+
+                <div class="publicSlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/public-6.jpg" style="width:100%" alt="Gary and Valerie">
+                    <div class="slideText">Fred Astaire and The White Rabbit</div>
                 </div>
 
                 <!-- Next and previous buttons heavyrightanglebracket heavyleftanglebracket-->
@@ -388,6 +345,8 @@
               <span id="1" class="dot"></span>
               <span id="2" class="dot"></span>
               <span id="3" class="dot"></span>
+              <span id="4" class="dot"></span>
+              <span id="5" class="dot"></span>
             </div>
             <br>            
         </div>        
@@ -463,68 +422,6 @@
 
    <script type="text/javascript">
             
-            let carouselId = ["gallery", "public-gallery"]              
-            let showId     = ["gallerySlideshow", "publicSlideshow"]        
-            let slideId    = ["gallerySlides", "publicSlides"]              
-
-            let y
-            let slideIndex = [0, 0];   
-            console.log("Slide Index : " + slideIndex);
-
-            // show slide 1 for gallery 
-            showSlides(0, 0);
-            
-            // show slide 1 for public-gallery
-            showSlides(0, 1);
-
-            function currentSlide(n, no) {
-                showSlides(slideIndex[0] = n, no);  
-            }
-
-            // n = 1 (next) or -1  (prev) no = slideshow number
-            function plusSlides(n, no) {
-                console.log("Before : " + slideIndex)
-                slideIndex[0] ++
-                showSlides(slideIndex[0], no);            
-                console.log("After : " + slideIndex)
-            }
-
-            // n = slide no   no = xxxxxxSlides
-            function showSlides(n, no) {                
-                
-                // console.log("SlideId[no] " + slideId[no])
-                
-                // SlideId[no] = gallerySlides or publicSlides
-                
-                let slides = document.getElementsByClassName(slideId[no]);
-                let show   = document.getElementById(carouselId[no]);                
-                let dots   = show.getElementsByClassName("dot");
-                
-                if (n > slides.length-1) {
-                    slideIndex[0] = 0
-                }    
-              
-                if (n < 0) {
-                    slideIndex[0] = slides.length-1
-                }
-              
-                // hide all the images
-                for (let i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                
-                // remove the active class from the dots
-                for (let i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                }
-              
-                slides[slideIndex[0]].style.display = "block";  
-                
-                // make the matching dot the active dot
-                dots[slideIndex[0]].className += " active";
-                
-            }
-
             // ------------------------------------------------------------------------------------------------//
             // AVOID FORM SUBMISSION AFTER REFRESH                                                             //
             // ------------------------------------------------------------------------------------------------//
@@ -532,17 +429,44 @@
                 window.history.replaceState( null, null, window.location.href );
             }
             
+            // -----------------------------------------------------------------------------------------------------------------//
+            // if localStorage cookieBannerDisplayed=False, then display the cookie banner                                      //
+            // -----------------------------------------------------------------------------------------------------------------//
+             if (localStorage.getItem("cookieBannerDisplayed") != "True") {
+                  document.querySelector(".cookie-banner").style.display = "flex";
+              };
+            
+            // -------------------------------------------------------------------------------------------------//
+            // slideIndex[0] - is which slide to display                                                        //
+            // slideIndex[1] - which slides to use                                                              //
+            // -------------------------------------------------------------------------------------------------//
+            let slideIndex = [0, 0];   
+
+            // -------------------------------------------------------------------------------------------------//
+            // Arrays to hold the classes and ID's of the carousel, slides and dots                             //
+            // -------------------------------------------------------------------------------------------------//
+            let carouselId = ["gallery", "public-gallery"]              
+            let showId     = ["gallerySlideshow", "publicSlideshow"]        
+            let slidesId   = ["gallerySlides", "publicSlides"]              
+
+            // default to slide 1 of gallerySlides
+            showSlides(0, 0);
+            
+            // default to slide 1 of publicSlides
+            showSlides(0, 1);
+
             // ------------------------------------------------------------------------------------------------//
             // ADD CLICK EVENT LISTENER FOR THE DOM                                                            //
             // ------------------------------------------------------------------------------------------------//
-
             document.addEventListener('click', function (event) {
 
                 // -------------------------------------------------------------------------------------------------//
                 // event listener for the close-banner class                                                        //
                 // -------------------------------------------------------------------------------------------------//
-                if (event.target.matches('#close-banner')) {
+                if (event.target.matches('#accept-cookies-btn')) {
+                    // remove the cookie banner and set cookieBannerDisplayed=True
                     document.querySelector(".cookie-banner").style.display = "none";
+                    localStorage.setItem("cookieBannerDisplayed", "True")
                 }
 
                 // -------------------------------------------------------------------------------------------------//
@@ -565,16 +489,12 @@
                     parentId = carouselId.indexOf(parentSlideShow);
                     // console.log("Parent Id : " + parentId)
                     
-                    // display the current slide
-                    // showSlides(dotId, parentId)
-                    // currentSlide(dotId, parentId)
-
                     slideIndex[0] = dotId
                     slideIndex[1] = parentId
 
+                    // use spread operator to pass the array slideIndex
                     showSlides(...slideIndex);
                     
-                    console.log("Dot Id : " + dotId + " slideIndex : " + slideIndex)
                 }
 
                 // -------------------------------------------------------------------------------------------------//
@@ -585,38 +505,69 @@
                     // get the parent class of the slideshow
                     parentSlideShow =  event.target.parentNode.className
                     
-                    // console.log("Parent : " + parentSlideShow)
-
-                    // get the index of the parent slide show class from the array
+                    // update slideIndex with index of the parent slide show class from the array
                     parentId = showId.indexOf(parentSlideShow);
                     slideIndex[1] = parentId
-                    
-                    // console.log("Parent Id : " + parentId)
 
                     if (event.target.matches('.next')) {
+                        // increment the slide no to display next slide
                         slideIndex[0] ++
-                        showSlides(...slideIndex)
-                        // plusSlides(1, parentId)
                     }                
 
                     if (event.target.matches('.prev')) {
+                        // decrement the slide no to display previous slide
                         slideIndex[0] --
-                        showSlides(...slideIndex)
-                        // plusSlides(-1, parentId)    
+                        // use spread operator to pass the array slideIndex
+                        // showSlides(...slideIndex)
                     }
+                    
+                    // use spread operator to pass the array slideIndex
+                    showSlides(...slideIndex)
                 }
 
             }, false);     // end of DOM CLICK eventlistener
             // --------------------------------------------------------------------------------------------//         
 
-            // --------------------------------------------------------------------------------------------------------------//
-            // if localStorage cookieBannerDisplayed=False, then display the cookie banner and set cookieBannerDisplayed=True   //
-            // -----------------------------------------------------------------------------------------------------------------//
-            // if (localStorage.getItem("cookieBannerDisplayed") != "True") {
-            //      document.querySelector(".cookie-banner").style.display = "flex";
-            //      localStorage.setItem("cookieBannerDisplayed", "True")
-            //  };
-            
+            // -------------------------------------------------------------------------------------------------//
+            // Display the slides for the accesssed slide show                                                  //
+            // receives slideIndex arrray pointing to slide no and Slides to display                            //
+            // n  - the number of the slide to display                                                          //
+            // no - the index of the array for the slides to display                                            //
+            // -------------------------------------------------------------------------------------------------//
+            function showSlides(n, no) {                
+                
+                let show   = document.getElementById(carouselId[no]);                
+                let slides = document.getElementsByClassName(slidesId[no]);
+
+                // get the dots for the selected carousel
+                let dots   = show.getElementsByClassName("dot");
+                
+                if (n > slides.length-1) {
+                    slideIndex[0] = 0 
+                }    
+              
+                if (n < 0) {
+                    slideIndex[0] = slides.length-1
+                }
+              
+                // hide all the images in the slideshow
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                
+                // remove the active class from the dots in the carousel
+                for (let i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+              
+                // display the slide
+                slides[slideIndex[0]].style.display = "block";  
+                
+                // make the matching carousel dot the active dot
+                dots[slideIndex[0]].className += " active";
+                
+            }
+
         </script>
         
     </body>
