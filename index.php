@@ -207,9 +207,10 @@
         <!-- ********************************************************************************** -->
         <div id="events">
 
-            <h3 class="title">2021 Events</h3>
-            <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p>
-
+            <h3 class="title">2022 Events</h3>
+<!--            <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p>-->
+            <p>With the lifting of restrictions for social dancing the band plan to resume rehersals in mid-Febrary</p>
+            <p>Once the band have some firm dates we will post updates here and on the FaceBook page</p>
         </div> <!-- End Of Events -->
         
         <hr>
