@@ -54,7 +54,7 @@
                     <li><a href="#body-top">Top</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#musical-direction">Musical Direction</a></li>
-                    <li><a href="#events">Events</a></li>
+                    <li><a href="#events"><span class="flashing-text">New </span>Events</a></li>
                     <li><a href="#band-sections">Band Sections</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
@@ -208,12 +208,17 @@
         <div id="events">
 
             <h3 class="title">2022 Events</h3>
-<!--            <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p>-->
-            <p>With the lifting of restrictions for social dancing the band plan to resume rehersals in mid-Febrary</p>
-            <p>Once the band have some firm dates we will post updates here and on the FaceBook page</p>
-        </div> <!-- End Of Events -->
+            <!-- <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p> -->
+            <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2022</p>
         
+            <div class="grid">
+                    <p class="event-img">
+                        <img src="img/summerswing22.png" alt="Summer swing event, Balmoral golf club Saturday 25th June">
+                    </p>
+            </div>
+        </div> <!-- End Of Events -->
         <hr>
+        
         <!-- ********************************************************************************** -->
         
         <!-- ********************************************************************************** -->
