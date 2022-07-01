@@ -242,6 +242,44 @@ details[open] > ul {
     width: 100%;
 }
 /* ******************************************************************************************   */
+/*  EVENTS - displayed as a DIV with a single image 14 June 2022                                */
+/* ******************************************************************************************   */
+#events div.grid {
+    text-align: center;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    margin-bottom: 10px;
+    align-content: center;
+    justify-content: center;
+}
+#events div.grid p.event-img img {
+    text-align: center;
+    max-width: 50%;
+}
+/* ******************************************************************************************   */
+/*  EVENTS - creates flashing text in the nav bar to highlight new events                       */
+/* ******************************************************************************************   */
+.flashing-text {
+    animation: blinkingText 1s infinite;
+    color: aqua;
+    font-weight: bold;
+}
+/* Specifies the animation and transparency for the blinking text */
+@keyframes blinkingText {
+
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* ******************************************************************************************   */
 /*                                  EVENTS                                                      */
 /* ******************************************************************************************   */
 #events {
@@ -280,7 +318,7 @@ details[open] > ul {
     text-align: center;
 }
 #events ul.grid li p.event-img img {
-    max-width: 100%;
+    max-width: 50%%;
 }
 #events ul.grid li div.event-desc { 
     margin-bottom: 15px;
@@ -291,37 +329,6 @@ details[open] > ul {
     margin: auto;
 }
 
-#events div.grid {
-    display: grid;
-/*    grid-template-columns: 1fr;*/
-    grid-gap: 2px;
-    margin-bottom: 10px;
-    align-content: center;
-    justify-content: center;
-}
-#events div.grid p.event-img img {
-    text-align: center;
-    max-width: 100%;
-}
-
-.flashing-text {
-    animation: blinkingText 1s infinite;
-    color: aqua;
-    font-weight: bold;
-}
-/* Specifies the animation and transparency for the blinking text */
-@keyframes blinkingText {
-
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: .5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 /* ******************************************************************************************   */
 /*                                      GALLERY                                                 */
 /* ******************************************************************************************   */
