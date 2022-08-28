@@ -54,8 +54,8 @@
                     <li><a href="#body-top">Top</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#musical-direction">Musical Direction</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <!-- <li><a href="#events"><span class="flashing-text">New </span>Events</a></li> -->
+                    <!-- <li><a href="#events">Events</a></li> -->
+                    <li><a href="#events"><span class="flashing-text">New </span>Events</a></li>
                     <li><a href="#band-sections">Band Sections</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
@@ -210,11 +210,17 @@
 
             <h3 class="title">2022 Events</h3>
             <!-- <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p> -->
-            <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2022</p>
+            <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2022<br></p>
 
             <div class="grid">
+<!--                    <p class="event-img">
+                         <img src="img/upcoming-events.png" alt="Upcoming Events">
+                     </p> -->
                     <p class="event-img">
-                        <img src="img/upcoming-events.png" alt="Upcoming Events">
+                        <img src="img/NICHS Fund Raiser Oct 1.png" alt="Norther Ireland Chest Heart and Stroke Fund Raiser, Balmoral golf club Saturday 01st October">
+                    </p>
+                    <p class="event-img">
+                        <img src="img/Rehearsals Sept 05.png" alt="Band rehearsals resume September 05 at Shorts Recreation Center, Holywood Rpad">
                     </p>
                     <p class="event-img">
                         <img src="img/summerswing22.png" alt="Summer swing event, Balmoral golf club Saturday 25th June">
