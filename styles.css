@@ -248,7 +248,7 @@ details[open] > ul {
     text-align: center;
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 2px;
     margin-bottom: 10px;
     align-content: center;
@@ -257,6 +257,8 @@ details[open] > ul {
 #events div.grid p.event-img img {
     text-align: center;
     max-width: 50%;
+    margin-top: 10px;
+    border: 1px solid black;
 }
 /* ******************************************************************************************   */
 /*  EVENTS - creates flashing text in the nav bar to highlight new events                       */
@@ -536,9 +538,9 @@ section.flexbox-section p {
 /* apply to any device that has a screen width of 576px or higher                               */
 /* ******************************************************************************************   */
 @media screen and (min-width: 576px) {
-                                                            /* YELLOW  */
+/* YELLOW  */
     #body-top { 
-/*        background: rgba(255,255,0,.25);                    */
+    /*        background: rgba(255,255,0,.25);                    */
     }
     #hero {
         margin: 80px 5px 0px 5px;                                         /* top right bottom left */
@@ -546,6 +548,16 @@ section.flexbox-section p {
     #jazz-legends ul.grid {
         grid-template-columns: auto auto;
         grid-gap: 2px;
+    }
+    #events div.grid {
+        /* text-align: center;
+        
+        display: grid; */
+        grid-template-columns: 1fr;
+        /* grid-gap: 2px;
+        margin-bottom: 10px;
+        align-content: center;
+        justify-content: center; */
     }
     #events ul.grid li div.event-desc ul { 
         width: 85%;
@@ -588,6 +600,16 @@ section.flexbox-section p {
     #jazz-legends ul.grid {
         grid-template-columns: auto auto auto;
         grid-gap: 4px;
+    }
+    #events div.grid {
+        /* text-align: center;
+        
+        display: grid; */
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 2px;
+        margin-bottom: 10px;
+        align-content: center;
+        justify-content: center; */
     }
     #events ul.grid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -639,6 +661,16 @@ section.flexbox-section p {
         width: 80%;
         margin: auto;
     }
+    #events div.grid {
+        /* text-align: center;
+        
+        display: grid; */
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 2px;
+        margin-bottom: 10px;
+        align-content: center;
+        justify-content: center; */
+    }
     #events ul.grid li div.event-desc ul { 
         font-size: 15px;
         width: 60%;
@@ -675,5 +707,15 @@ section.flexbox-section p {
     #band-sections ul.grid {
         grid-template-columns: auto auto auto auto;
         grid-gap: 15px;
+    }
+    #events div.grid {
+        /* text-align: center;
+        
+        display: grid; */
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 2px;
+        margin-bottom: 10px;
+        align-content: center;
+        justify-content: center; */
     }
 }
