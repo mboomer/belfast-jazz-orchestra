@@ -213,11 +213,14 @@
             <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2022<br></p>
 
             <div class="grid">
-<!--                    <p class="event-img">
+                    <!-- <p class="event-img">
                          <img src="img/upcoming-events.png" alt="Upcoming Events">
                      </p> -->
                     <p class="event-img">
-                        <img src="img/NICHS Fund Raiser Oct 1.png" alt="Norther Ireland Chest Heart and Stroke Fund Raiser, Balmoral golf club Saturday 01st October">
+                        <img src="img/Halloween-29-Oct.png" alt="Halloween Fancy Dress Dance, at SHorts Recreation Center, Holywood Road">
+                    </p>
+                    <p class="event-img">
+                        <img src="img/NICHS-Fund-Raiser-Oct-1.png" alt="Norther Ireland Chest Heart and Stroke Fund Raiser, Balmoral golf club Saturday 01st October">
                     </p>
                     <p class="event-img">
                         <img src="img/Rehearsals Sept 05.png" alt="Band rehearsals resume September 05 at Shorts Recreation Center, Holywood Rpad">
