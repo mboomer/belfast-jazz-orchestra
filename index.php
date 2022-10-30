@@ -54,8 +54,8 @@
                     <li><a href="#body-top">Top</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#musical-direction">Musical Direction</a></li>
-                    <!-- <li><a href="#events">Events</a></li> -->
-                    <li><a href="#events"><span class="flashing-text">New </span>Events</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <!-- <li><a href="#events"><span class="flashing-text">New </span>Events</a></li> -->
                     <li><a href="#band-sections">Band Sections</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
@@ -390,7 +390,7 @@
                 </p>
             </section>
 
-            <h3 class="title">Balmoral Golf Club</h3>
+            <!-- <h3 class="title">Balmoral Golf Club</h3>
             <section class="flexbox-section">
                 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2313.1664670801943!2d-5.970907784163821!3d54.565817780252615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861061d7ef2b18f%3A0x6bf314d6cb014147!2sBalmoral%20Golf%20Club!5e0!3m2!1sen!2sie!4v1661702949118!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
                 <p>Balmoral Golf Club,<br>
@@ -399,7 +399,8 @@
                     Phone: 028 9038 1514
                 </p>
             </section>
-
+            -->
+            
         </div>
         <hr>
         <!-- ********************************************************************************** -->
