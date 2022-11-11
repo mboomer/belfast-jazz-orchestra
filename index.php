@@ -317,39 +317,45 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="publicSlides fade">
-                    <div class="numbertext">1 / 6</div>
+                    <div class="numbertext">1 / 7</div>
+                    <img src="img/public-7.jpg" style="width:100%" alt="Fancy Dress Costumes Halloween 2022">
+                    <div class="slideText">Fancy Dress - 2022</div>
+                </div>
+
+                <div class="publicSlides fade">
+                    <div class="numbertext">2 / 7</div>
                     <img src="img/public-1.jpg" style="width:100%" alt="Scott Naomi & Caroline">
                     <div class="slideText">Scott Naomi - Jazz In The Park</div>
                 </div>
 
                 <div class="publicSlides fade">
-                    <div class="numbertext">2 / 6</div>
+                    <div class="numbertext">3 / 7</div>
                     <img src="img/public-2.jpg" style="width:100%" alt="Curtis - Dance Lesson">
                     <div class="slideText">Dance Lesson with Curtis</div>
                 </div>
 
                 <div class="publicSlides fade">
-                    <div class="numbertext">3 / 6</div>
+                    <div class="numbertext">4 / 7</div>
                     <img src="img/public-3.jpg" style="width:100%" alt="Swing Dance">
                     <div class="slideText">Lindy or Swing?</div>
                 </div>
 
                 <div class="publicSlides fade">
-                    <div class="numbertext">4 / 6</div>
+                    <div class="numbertext">5 / 7</div>
                     <img src="img/public-4.jpg" style="width:100%" alt="Scott & Naomi">
                     <div class="slideText">Scott and Naomi - Lindy</div>
                 </div>
 
                 <div class="publicSlides fade">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="img/public-5.jpg" style="width:100%" alt="Fancy Dress Winners">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="img/public-5.jpg" style="width:100%" alt="Fancy Dress Winners 2018">
                     <div class="slideText">Fancy Dress Winners - 2018</div>
                 </div>
 
                 <div class="publicSlides fade">
-                    <div class="numbertext">6 / 6</div>
+                    <div class="numbertext">7 / 7</div>
                     <img src="img/public-6.jpg" style="width:100%" alt="Gary and Valerie">
-                    <div class="slideText">Fred Astaire and The White Rabbit</div>
+                    <div class="slideText">Fred Astaire and The White Rabbit - 2018</div>
                 </div>
 
                 <!-- Next and previous buttons heavyrightanglebracket heavyleftanglebracket-->
@@ -367,6 +373,7 @@
               <span id="3" class="dot"></span>
               <span id="4" class="dot"></span>
               <span id="5" class="dot"></span>
+              <span id="6" class="dot"></span>
             </div>
             <br>            
         </div>        
