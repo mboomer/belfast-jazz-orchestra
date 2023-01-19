@@ -54,8 +54,8 @@
                     <li><a href="#body-top">Top</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#musical-direction">Musical Direction</a></li>
-                    <!-- <li><a href="#events">Events</a></li> -->
-                    <li><a href="#events"><span class="flashing-text">New </span>Events</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <!-- <li><a href="#events"><span class="flashing-text">New </span>Events</a></li> -->
                     <li><a href="#band-sections">Band Sections</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
@@ -77,9 +77,25 @@
         <!-- ********************************************************************************** -->
 
         <!-- ********************************************************************************** -->
+        <!-- New Event Notification not displayed - displayed by JS if required on page load    -->
+        <!-- ********************************************************************************** -->
+        <div class="new-event" style="display: none">
+
+            <h3 class="title">Up Coming Event</h3>
+            <div id="two-cols">
+                <div class="about-img"><img src="img/Event-Notification-Valentines-Day.png" alt="Valentines Day Dance"></div>
+                <div class="upcoming-event">
+                    <p>Join the band for a night of dancing and romance at Shorts Recreation Center, Holywood Road, on Tuesday 14th February.</p>
+                    <br><button id="accept-event-btn">Close</button>
+                </div>
+            </div>
+        </div>
+        <!-- ********************************************************************************** -->
+
+        <!-- ********************************************************************************** -->
         <div id="hero">
             <div class="background-image">
-                 <img src="img/hero.jpg" alt="Belfast Jazz Swing Orchestra">;
+                 <img src="img/hero.jpg" alt="Belfast Jazz Swing Orchestra">
             </div>
         </div>
         <hr>
@@ -207,6 +223,17 @@
 
         <!-- ********************************************************************************** -->
         <div id="events">
+
+                <h3 class="title">2023 Events</h3>
+                <!-- <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p> -->
+                <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2023<br></p>
+                <br>
+                <div class="grid">
+                        <p class="event-img">
+                            <img src="img/Valentines-Day-2023.png" alt="Valentines Day Dance, at Shorts Recreation Center, Holywood Road">
+                        </p>
+                </div>
+            <hr>
 
             <h3 class="title">2022 Events</h3>
             <!-- <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p> -->
@@ -478,6 +505,13 @@
                   document.querySelector(".cookie-banner").style.display = "flex";
               };
             
+            // -----------------------------------------------------------------------------------------------------------------//
+            // if localStorage eventNotificationDisplayed=False, then display the Event Notification                            //
+            // -----------------------------------------------------------------------------------------------------------------//
+             if (localStorage.getItem("eventNotificationDisplayed") != "True") {
+                  document.querySelector(".new-event").style.display = "flex";
+              };
+            
             // -------------------------------------------------------------------------------------------------//
             // slideIndex[0] - is which slide to display                                                        //
             // slideIndex[1] - which slides to use                                                              //
@@ -509,6 +543,15 @@
                     // remove the cookie banner and set cookieBannerDisplayed=True
                     document.querySelector(".cookie-banner").style.display = "none";
                     localStorage.setItem("cookieBannerDisplayed", "True")
+                }
+
+                // -------------------------------------------------------------------------------------------------//
+                // event listener to view the new event                                                             //
+                // -------------------------------------------------------------------------------------------------//
+                if (event.target.matches('#accept-event-btn')) {
+                    // remove the event notification banner and set eventNotificationDisplayed=True
+                    document.querySelector(".new-event").style.display = "none";
+                    localStorage.setItem("eventNotificationDisplayed", "True")
                 }
 
                 // -------------------------------------------------------------------------------------------------//
