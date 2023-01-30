@@ -229,10 +229,16 @@
                 <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2023<br></p>
                 <br>
                 <div class="grid">
+
                         <p class="event-img">
                             <img src="img/Valentines-Day-2023.png" alt="Valentines Day Dance, at Shorts Recreation Center, Holywood Road">
                         </p>
-                </div>
+                    
+                        <p class="event-img">
+                            <img src="img/St-Patricks-Day-2023.png" alt="St. Patricks Day Dance, at Shorts Recreation Center, Holywood Road">
+                        </p>
+
+            </div>
             <hr>
 
             <h3 class="title">2022 Events</h3>
