@@ -83,9 +83,9 @@
 
             <h3 class="title">Up Coming Event</h3>
             <div id="two-cols">
-                <div class="about-img"><img src="img/Event-Notification-Valentines-Day.png" alt="Valentines Day Dance"></div>
+                <div class="about-img"><img src="img/Event Notification-St-Patricks-Day.png" alt="St. Patricks Day Dance"></div>
                 <div class="upcoming-event">
-                    <p>Join the band for a night of dancing and romance at Shorts Recreation Center, Holywood Road, on Tuesday 14th February.</p>
+                    <p>Join the band for a celebration of St. Patricks Day, on Friday 17th March.</p>
                     <br><button id="accept-event-btn">Close</button>
                 </div>
             </div>
@@ -229,26 +229,25 @@
                 <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2023<br></p>
                 <br>
                 <div class="grid">
-
-                        <p class="event-img">
-                            <img src="img/Valentines-Day-2023.png" alt="Valentines Day Dance, at Shorts Recreation Center, Holywood Road">
-                        </p>
-                    
                         <p class="event-img">
                             <img src="img/St-Patricks-Day-2023.png" alt="St. Patricks Day Dance, at Shorts Recreation Center, Holywood Road">
                         </p>
-
-            </div>
+                        <p class="event-img">
+                            <img src="img/Valentines-Day-2023.png" alt="Valentines Day Dance, at Shorts Recreation Center, Holywood Road">
+                        </p>
+                </div>
             <hr>
 
-            <h3 class="title">2022 Events</h3>
+
             <!-- <p class="covid19">Due to CoVid-19 all events have been cancelled until further notice</p> -->
+<!--
+            <h3 class="title">2022 Events</h3>
             <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2022<br></p>
             <br>
             <div class="grid">
-                    <!-- <p class="event-img">
+                    <p class="event-img">
                          <img src="img/upcoming-events.png" alt="Upcoming Events">
-                     </p> -->
+                     </p> 
                     <p class="event-img">
                         <img src="img/Christmas-Party-2022.png" alt="Christmas Party, at Shorts Recreation Center, Holywood Road">
                     </p>
@@ -265,9 +264,9 @@
                         <img src="img/summerswing22.png" alt="Summer swing event, Balmoral golf club Saturday 25th June">
                     </p>
             </div>
-
-        </div> <!-- End Of Events -->
         <hr>
+-->
+        </div> <!-- End Of Events -->
         
         <!-- ********************************************************************************** -->
         
