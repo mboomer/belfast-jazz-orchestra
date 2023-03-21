@@ -514,7 +514,12 @@
             // if localStorage eventNotificationDisplayed=False, then display the Event Notification                            //
             // -----------------------------------------------------------------------------------------------------------------//
              if (localStorage.getItem("eventNotificationDisplayed") != "True") {
-                  document.querySelector(".new-event").style.display = "flex";
+
+                 // /////////////////////////////////////////
+                 // temporarily stop displaying new events //
+                 // no dates for new events scheduled yet  //
+                 // /////////////////////////////////////////
+                // document.querySelector(".new-event").style.display = "flex";
               };
             
             // -------------------------------------------------------------------------------------------------//
