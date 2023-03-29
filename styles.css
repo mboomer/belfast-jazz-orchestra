@@ -471,6 +471,42 @@ section.flexbox-section p {
     width: 100%;
     height: 400px;
 }
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+/* ************************************************************************************************* */
+/*                                      REGISTER EMAIL FORM                                          */
+/* ************************************************************************************************* */
+#register-email {
+    scroll-behavior: smooth;
+    scroll-margin-top: 120px;
+    background-color: aliceblue;
+}
+
+#register-email-desc {
+    text-align: center;
+    margin: 15px 5px 10px 5px;
+}
+
+#subscribe-btn, #enquiry-btn {
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+#subscribe-btn:hover, #enquiry-btn:hover {
+  background-color: darkgray;
+  color: white;
+}
+
 /* ************************************************************************************************* */
 /*                                      CONTACT FORM                                                 */
 /* ************************************************************************************************* */
@@ -481,11 +517,11 @@ section.flexbox-section p {
     margin: auto;
     width: 100%;
 }
-#formwrapper {
+#formwrapper, #register-form {
     display: grid;
     grid-template-columns: 1fr;
 }
-#formwrapper fieldset {
+#formwrapper fieldset, #register-form fieldset {
 /*    background-color: aliceblue;*/
     max-width: 900px;
     min-height: 100px;
@@ -493,7 +529,7 @@ section.flexbox-section p {
     padding: 2%;
     margin: 0px auto 10px;    
 }
-#left-col {                             /* the colums will be split across the screen */
+#left-col, #left-col-email {                             /* the colums will be split across the screen */
     width: 100%;
     padding: 1%;
 }
@@ -503,13 +539,13 @@ section.flexbox-section p {
     justify-content: flex-start;        /* line fields up to left */
     flex-wrap: wrap;                    /* wrap fields when appropriate  */
 }
-#left-col input {                       /* this ensures the input fields are centered and dont take up full width */
+#left-col input, #left-col-email input {                       /* this ensures the input fields are centered and dont take up full width */
     width:95%;
     padding: 5px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
-#right-col {
+#right-col, #right-col-email {
     width: 100%;
     padding: 1%;
 }
@@ -519,8 +555,8 @@ section.flexbox-section p {
     flex-wrap: wrap;
     justify-content: space-around;          /* makes sure items are evenly spaced */
 }
-#right-col textarea {                       /* this ensures the input fields are centered and dont take up full width */
-    width:95%;
+#right-col textarea, #right-col-email textarea {                       /* this ensures the input fields are centered and dont take up full width */
+    width:100%;
     padding: 5px;
     margin: 0 auto;
     margin-bottom: 5px;
@@ -531,12 +567,12 @@ section.flexbox-section p {
 /* ******************************************************************************************   */
 /* hide form fields to avoid spam bots                                                          */
 /* ******************************************************************************************   */
-#left-col fieldset #email {
+#hidden1, #hidden2, #hidden3, #hidden4 {
     display: none;
 }
-#right-col fieldset #subject {
+/* #right-col fieldset #subject, #hidden2 {
     display: none;
-}
+} */
 /* ******************************************************************************************   */
 /*                                      SOCIAL MEDIA                                            */
 /* ******************************************************************************************   */
@@ -693,7 +729,7 @@ section.flexbox-section p {
         grid-template-columns: auto auto auto auto;
         grid-gap: 4px;
     }
-    #formwrapper {
+    #formwrapper, #register-form {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -713,9 +749,9 @@ section.flexbox-section p {
 /*        background: rgba(0,0,255,.25);*/
     }
     #header-menu nav ul {
-        grid-template-columns: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 1fr 1fr;
         text-align: center;
-        width: 85%;
+        width: 90%;
         margin: auto;
     }
     #hero {
