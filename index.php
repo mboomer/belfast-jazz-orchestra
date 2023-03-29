@@ -1,7 +1,7 @@
 <?php
     if($_POST["submit"]) {
-        $recipient="bookings@bjso.org.uk,caroline.brown@bjso.org.uk,victor.currie@bjso.org.uk";
-        $subject="Message from 9habu contact form";
+        $recipient="mark.boomer@9habu.com;bookings@bjso.org.uk,caroline.brown@bjso.org.uk,victor.currie@bjso.org.uk";
+        $subject="Message from Belfast Jazz Orchestra Booking Enqiuiry form";
         $senderFirst=$_POST["firstname"];
         $senderLast=$_POST["lastname"];
         $senderEmail=$_POST["emailadd"];
@@ -60,8 +60,8 @@
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#shorts-rec">Shorts Rec Club</a></li>
                     <li><a href="#public-gallery">Dancing</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
-                    <!-- <li><a href="#social-media">Contact Us</a></li>-->
+                    <li><a href="#contact-us">Bookings</a></li>
+                    <li><a href="#register-email">Register</a></li>
                 </ul>
             </nav>
         </header>
@@ -449,9 +449,56 @@
 
         <!-- ********************************************************************************** -->
 
+        <div id="register-email">
+
+            <div style="text-align: center;"><h3 class="title">Register Email Address</h3></div>
+            <div id="register-email-desc">
+                Register your email to receive an email for upcoming events.<br>
+                You will only ever receive email from us regarding the bands events.<br>
+                We will not use your information for marketing of any kind.
+            </div>
+
+            <form id="register-form" method="post" action="php/subscribe.php">
+                <section id="left-col-email">
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                        <p>
+                            <!-- <label for="email">Email Address</label> -->
+                            <input type="email" id="email" name="email" placeholder="email@address.com" tabindex="1">
+
+                            <!-- <label for="firstn">First Name</label> -->
+                            <input  type="text" id="firstn" name="firstn" placeholder="Enter preferred first name" tabindex="2">
+
+                            <!-- <label for="lastn">Last Name</label> -->
+                            <input type="text" id="lastn" name="lastn" placeholder="Last Name" tabindex="3">
+
+                            <!-- this input field will be hidden as part of the spam protection -->
+                            <input id="hidden1" name="hidden1" type="email" tabindex="6">
+
+                            <button id="subscribe-btn">Subscribe</button tabindex=4>
+                        </p>
+                    </fieldset>
+                </section>
+                <section id="right-col-email">
+                    <fieldset>
+                        <legend>Status</legend>
+                        <textarea id="status"  name="status" rows="2" tabindex="5"></textarea>
+                        <!-- this input field will be hidden as part of the spam protection -->
+                        <input id="hidden2" name="hidden2" type="text"  placeholder="" tabindex="7">
+                    </fieldset>
+                </section>    
+            </form>
+
+        </div> <!-- end of register-email -->
+        <hr>
+
+        <!-- ********************************************************************************** -->
+
+        <!-- ********************************************************************************** -->
+
         <div id="contact-us">
 
-            <div style="text-align: center;"><h3 class="title">Contact Form</h3></div>
+            <div style="text-align: center;"><h3 class="title">Enquiry Form</h3></div>
 
             <form id="formwrapper" method="post" action="index.php">
                 <section id="left-col">
@@ -464,24 +511,25 @@
                             <input id="emailadd"  name="emailadd"  type="email"  placeholder="email@address.com" tabindex="3" required >
                             <input id="phone"     name="phone"     type="number" placeholder="phone/mobile number" tabindex="4">
                             <!-- this input field will be hidden as part of the spam protection -->
-                            <input id="email"     name="email"     type="email" placeholder="email@address.com" tabindex="5">
+                            <input id="hidden3"   name="hidden3"   type="email" tabindex="7">
                         </p>
                     </fieldset>
                 </section>
                 <section id="right-col">
                     <fieldset>
-                        <legend>Enquiry</legend>
+                        <legend>Booking Enquiry</legend>
                         <!-- this input field will be hidden as part of the spam protection -->
-                        <input    id="subject" name="subject" type="text"  placeholder="Subject" tabindex="5">
-                        <textarea id="message" name="message" rows="10" placeholder="If you are inquiring about the band availability then please include date, time and location required..." tabindex="6"></textarea>
+                        <input    id="hidden4" name="hidden4" type="text" tabindex="8">
+                        <textarea id="message" name="message" rows="9" placeholder="If you are inquiring about the band availability then please include date, time and location required..." tabindex="5"></textarea>
                     </fieldset>
-                    <div><input name="submit" type="submit" value="Submit Form" tabindex="7"></div>
+                    <div><input id="enquiry-btn" name="submit" type="submit" value="Submit Form" tabindex="6"></div>
                 </section>    
-            </form>
+            </form> <!-- end of formcontainer -->
 
-        </div> <!-- end of formcontainer -->
+        </div> <!-- end of contact-us -->
 
         <!-- ********************************************************************************** -->
+
         <footer id="social-media">
             <ul>
                 <li><a href="https://www.facebook.com/BelfastJazzOrchestra/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
@@ -496,6 +544,68 @@
 
    <script type="text/javascript">
             
+           // Get the form and error message elements
+            let regForm  = document.querySelector('#register-form');
+            let announce = regForm.querySelector('#status');
+
+            // Handle submit events
+            function submitHandler (event) {
+
+                // Stop the form from reloading the page
+                event.preventDefault();
+
+                // If hidden fields filled in, spam detected
+                if (regForm.hidden1.value || regForm.hidden2.value) {
+                    return;
+                }  
+
+                // Validate the email, first name and last name fields
+                if (!regForm.email.value) {
+                    announce.textContent = 'Please include a valid email address.';
+                    return;
+                }  
+
+                // Validate the first name field
+                if (!regForm.firstn.value) {
+                    announce.textContent = 'Please include your first name.';
+                    return;
+                }
+
+                // Validate the last name field
+                if (!regForm.lastn.value) {
+                    announce.textContent = 'Please include your last name.';
+                    return;
+                }
+
+                /**
+                 * Assuming everything is good, you can then submit to the same server-side endpoint that the form would normally POST to.
+                 * You can use the form.action property to get the value of the action endpoint from the form element itself. 
+                 * Include the fields as a stringified object for the body property.
+                 * include a headers object, with an Accept property of application/json.
+                */
+
+                const obj = {email: regForm.email.value, firstn: regForm.firstn.value, lastn: regForm.lastn.value};
+                console.log(obj);
+
+                fetch(regForm.action, {
+                    method: 'POST',
+                    body: JSON.stringify(obj),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                    }).then(function (response) {
+                        return response.json();
+                    }).then(function (data) {
+                        announce.textContent = data.msg;	
+                    }).catch(function (error) {
+                        announce.textContent = 'Something went wrong. Please try again.';
+                    });
+
+            }; // end of submitHandler
+
+            // Add event listener to the register email form to Listen for submit events 
+            regForm.addEventListener('submit', submitHandler);
+
             // ------------------------------------------------------------------------------------------------//
             // AVOID FORM SUBMISSION AFTER REFRESH                                                             //
             // ------------------------------------------------------------------------------------------------//
@@ -519,7 +629,7 @@
                  // temporarily stop displaying new events //
                  // no dates for new events scheduled yet  //
                  // /////////////////////////////////////////
-                // document.querySelector(".new-event").style.display = "flex";
+                 //  document.querySelector(".new-event").style.display = "flex";
               };
             
             // -------------------------------------------------------------------------------------------------//
