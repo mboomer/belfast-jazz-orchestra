@@ -83,9 +83,11 @@
 
             <h3 class="title">Up Coming Event</h3>
             <div id="two-cols">
-                <div class="about-img"><img src="img/Event Notification-St-Patricks-Day.png" alt="St. Patricks Day Dance"></div>
+                <div class="about-img"><img src="img/Event-Notification-Summer-2023.png" alt="Summer End Of Season Dance at Shorts Recreating Center, Holywood Road, Belfast"></div>
                 <div class="upcoming-event">
-                    <p>Join the band for a celebration of St. Patricks Day, on Friday 17th March.</p>
+                    <p>Join the band for their "End Of Season Event", on Friday 02 June.</p>
+                    <p>Shorts Recreation Center, Holywood Road, Belfast at 8:30pm</p>
+                    <p>Click on the Events link in Menu for more details or follow us on Facebook <a href="https://www.facebook.com/BelfastJazzOrchestra/" target="_blank"><i class="fab fa-facebook-square"></i></a><p>
                     <br><button id="accept-event-btn">Close</button>
                 </div>
             </div>
@@ -229,6 +231,9 @@
                 <p style="text-align: center;">The Belfast Jazz Swing Orchestra will be playing at the following events in 2023<br></p>
                 <br>
                 <div class="grid">
+                        <p class="event-img">
+                            <img src="img/Summer-2023.png" alt="End Of Season Dance, at Shorts Recreation Center, Holywood Road">
+                        </p>
                         <p class="event-img">
                             <img src="img/St-Patricks-Day-2023.png" alt="St. Patricks Day Dance, at Shorts Recreation Center, Holywood Road">
                         </p>
@@ -623,13 +628,25 @@
             // -----------------------------------------------------------------------------------------------------------------//
             // if localStorage eventNotificationDisplayed=False, then display the Event Notification                            //
             // -----------------------------------------------------------------------------------------------------------------//
-             if (localStorage.getItem("eventNotificationDisplayed") != "True") {
+             if (localStorage.getItem("eventNotificationDisplayed") === "True") {
+                
+                if ( localStorage.getItem("eventNotificationDate") === null ) {
+                    // /////////////////////////////////////////
+                    // temporarily stop displaying new events //
+                    // no dates for new events scheduled yet  //
+                    // /////////////////////////////////////////
+                    document.querySelector(".new-event").style.display = "flex";
+                    localStorage.setItem("eventNotificationDate", new Date() )
+                }
+                else {
+                    // do nothing, as already seen event notification
+                }
+              } else {
+                    // then never been on site before
+                    document.querySelector(".new-event").style.display = "flex";
+                    localStorage.setItem("eventNotificationDisplayed", true );
+                    localStorage.setItem("eventNotificationDate", new Date() );
 
-                 // /////////////////////////////////////////
-                 // temporarily stop displaying new events //
-                 // no dates for new events scheduled yet  //
-                 // /////////////////////////////////////////
-                 //  document.querySelector(".new-event").style.display = "flex";
               };
             
             // -------------------------------------------------------------------------------------------------//
